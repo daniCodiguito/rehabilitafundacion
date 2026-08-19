@@ -1,0 +1,1598 @@
+/* =====================================================
+   PÁGINA NUESTRO EQUIPO
+===================================================== */
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.main-nav a.active {
+    color: #c7aa6c;
+}
+
+.main-nav a.active::after {
+    width: 100%;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.team-hero {
+    position: relative;
+
+    min-height: 610px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #10201a;
+
+    overflow: hidden;
+}
+
+.team-hero-bg {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(199,170,108,.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(54,91,75,.25),
+            transparent 35%
+        );
+}
+
+.team-hero-bg::after {
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    right: -280px;
+    top: -150px;
+
+    border: 1px solid rgba(199,170,108,.12);
+
+    border-radius: 50%;
+}
+
+.team-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 380px;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.team-hero-text {
+    max-width: 720px;
+}
+
+.team-hero-text .eyebrow {
+    color: #c7aa6c;
+}
+
+.team-hero-text h1 {
+    margin: 22px 0;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 7vw, 78px);
+
+    line-height: .98;
+
+    font-weight: 600;
+}
+
+.team-hero-text h1 em {
+    color: #c7aa6c;
+
+    font-style: italic;
+}
+
+.team-hero-text p {
+    max-width: 600px;
+
+    margin: 0 0 32px;
+
+    color: rgba(255,255,255,.63);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.team-hero-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px 20px;
+
+    border: 1px solid rgba(199,170,108,.5);
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+.team-hero-button:hover {
+    background: #c7aa6c;
+
+    color: #10201a;
+
+    transform: translateY(-2px);
+}
+
+.team-hero-symbol {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.symbol-circle {
+    width: 270px;
+    height: 270px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(199,170,108,.25);
+
+    border-radius: 50%;
+
+    color: #c7aa6c;
+
+    font-size: 85px;
+
+    box-shadow:
+        0 0 0 35px rgba(199,170,108,.025),
+        0 0 0 70px rgba(199,170,108,.015);
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.team-intro {
+    background: #f5f4ef;
+}
+
+.team-intro-grid {
+    display: grid;
+
+    grid-template-columns: .9fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+.team-intro h2 {
+    margin: 18px 0 0;
+
+    color: #1a2c25;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.05;
+}
+
+.team-intro h2 em {
+    color: #a98c56;
+
+    font-style: italic;
+}
+
+.team-intro-copy {
+    max-width: 620px;
+}
+
+.team-intro-copy p {
+    margin: 0 0 18px;
+
+    color: #65716b;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   EQUIPO
+===================================================== */
+
+.professional-team {
+    background: #ffffff;
+}
+
+.professional-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+}
+
+.professional-card {
+    display: grid;
+
+    grid-template-columns: 210px 1fr;
+
+    min-height: 340px;
+
+    background: #f5f5f1;
+
+    border: 1px solid rgba(16,32,26,.07);
+
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.professional-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 25px 55px rgba(16,32,26,.12);
+}
+
+.professional-card-featured {
+    background: #eef0eb;
+}
+
+.professional-photo {
+    position: relative;
+
+    min-height: 100%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #dce2dc,
+            #bdc9c0
+        );
+
+    overflow: hidden;
+}
+
+.professional-placeholder {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: rgba(16,32,26,.25);
+
+    font-size: 65px;
+}
+
+.professional-number {
+    position: absolute;
+
+    left: 16px;
+    bottom: 16px;
+
+    color: rgba(255,255,255,.85);
+
+    font-size: 11px;
+
+    letter-spacing: .12em;
+}
+
+.professional-info {
+    padding: 32px 28px;
+}
+
+.professional-area {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #a98c56;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: .16em;
+
+    text-transform: uppercase;
+}
+
+.professional-info h3 {
+    margin: 0 0 9px;
+
+    color: #1a2c25;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    line-height: 1.15;
+}
+
+.professional-info strong {
+    display: block;
+
+    color: #53625b;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+.professional-info p {
+    margin: 17px 0;
+
+    color: #6d7772;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+}
+
+.professional-line {
+    width: 35px;
+    height: 1px;
+
+    margin: 18px 0;
+
+    background: #c7aa6c;
+}
+
+.professional-focus {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 6px;
+
+    color: #68746d;
+
+    font-size: 10px;
+}
+
+.professional-focus i {
+    color: #b0935d;
+}
+
+
+/* =====================================================
+   TALLERES
+===================================================== */
+
+.workshop-team {
+    background: #f5f4ef;
+}
+
+.workshop-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.workshop-person {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 22px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(16,32,26,.07);
+
+    transition: .3s ease;
+}
+
+.workshop-person:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(16,32,26,.08);
+}
+
+.workshop-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef0e9;
+
+    color: #a98c56;
+
+    font-size: 25px;
+}
+
+.workshop-person > div:last-child > span {
+    color: #a98c56;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: .15em;
+
+    text-transform: uppercase;
+}
+
+.workshop-person h3 {
+    margin: 5px 0;
+
+    color: #1a2c25;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+}
+
+.workshop-person strong {
+    color: #53625b;
+
+    font-size: 11px;
+}
+
+.workshop-person p {
+    margin: 13px 0 0;
+
+    color: #707a75;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.team-cta {
+    background: #10201a;
+
+    padding: 80px 0;
+}
+
+.team-cta-inner {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.team-cta .eyebrow {
+    color: #c7aa6c;
+}
+
+.team-cta h2 {
+    max-width: 650px;
+
+    margin: 14px 0 0;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(35px, 5vw, 55px);
+
+    line-height: 1.05;
+}
+
+.team-cta h2 em {
+    color: #c7aa6c;
+
+    font-style: italic;
+}
+
+.team-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 22px;
+
+    border: 1px solid #c7aa6c;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: .3s ease;
+}
+
+.team-cta-button:hover {
+    background: #c7aa6c;
+
+    color: #10201a;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .team-hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .team-hero-symbol {
+        display: none;
+    }
+
+    .team-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .professional-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .team-hero {
+        min-height: 570px;
+    }
+
+    .team-hero-text h1 {
+        font-size: 48px;
+    }
+
+    .team-hero-text p {
+        font-size: 14px;
+    }
+
+    .professional-card {
+        grid-template-columns: 1fr;
+    }
+
+    .professional-photo {
+        min-height: 240px;
+    }
+
+    .professional-info {
+        padding: 25px;
+    }
+
+    .workshop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workshop-person {
+        grid-template-columns: 55px 1fr;
+
+        padding: 23px;
+    }
+
+    .workshop-icon {
+        width: 52px;
+        height: 52px;
+
+        font-size: 20px;
+    }
+
+    .team-cta-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}/* =====================================================
+   HERO — NUESTRO EQUIPO
+===================================================== */
+
+.team-hero {
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #18211d;
+
+    color: #ffffff;
+}
+
+
+/* -----------------------------------------------------
+   IMAGEN
+----------------------------------------------------- */
+
+.team-hero-bg {
+    position: absolute;
+
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.02);
+
+    transition: transform 1.5s ease;
+}
+
+
+.team-hero:hover .team-hero-bg {
+    transform: scale(1.05);
+}
+
+
+/* -----------------------------------------------------
+   OVERLAY
+----------------------------------------------------- */
+
+.team-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12, 20, 17, 0.94) 0%,
+            rgba(12, 20, 17, 0.82) 32%,
+            rgba(12, 20, 17, 0.48) 62%,
+            rgba(12, 20, 17, 0.28) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* -----------------------------------------------------
+   CONTENIDO
+----------------------------------------------------- */
+
+.team-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+.team-hero-text {
+    max-width: 700px;
+}
+
+
+.team-hero-text .eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+    color: #d4bd8c;
+
+    letter-spacing: 2.5px;
+}
+
+
+.team-hero-text .eyebrow::before {
+    content: "";
+
+    width: 38px;
+    height: 1px;
+
+    background: #d4bd8c;
+}
+
+
+.team-hero-text h1 {
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 1.03;
+
+    font-weight: 500;
+
+    letter-spacing: -1.5px;
+
+    color: #ffffff;
+}
+
+
+.team-hero-text h1 em {
+    color: #d4bd8c;
+
+    font-style: italic;
+
+    font-weight: 500;
+}
+
+
+.team-hero-text p {
+    max-width: 580px;
+
+    margin: 0 0 35px;
+
+    color: rgba(255,255,255,.78);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* -----------------------------------------------------
+   BOTÓN
+----------------------------------------------------- */
+
+.team-hero-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px 23px;
+
+    border: 1px solid rgba(255,255,255,.35);
+
+    border-radius: 50px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+
+.team-hero-button i {
+    font-size: 16px;
+
+    transition: transform .3s ease;
+}
+
+
+.team-hero-button:hover {
+    background: #ffffff;
+
+    color: #18211d;
+
+    border-color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+.team-hero-button:hover i {
+    transform: translateY(3px);
+}
+
+
+/* -----------------------------------------------------
+   DETALLE DERECHO
+----------------------------------------------------- */
+
+.team-hero-detail {
+    position: absolute;
+
+    right: 8%;
+
+    bottom: 130px;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: rgba(255,255,255,.65);
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 10px;
+}
+
+
+.team-hero-detail span {
+    width: 45px;
+    height: 1px;
+
+    background: #d4bd8c;
+}
+
+
+/* -----------------------------------------------------
+   SCROLL
+----------------------------------------------------- */
+
+.team-hero-scroll {
+    position: absolute;
+
+    bottom: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 4;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: rgba(255,255,255,.6);
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    white-space: nowrap;
+}
+
+
+.team-hero-scroll span {
+    width: 30px;
+    height: 1px;
+
+    background: rgba(255,255,255,.5);
+}
+
+
+/* -----------------------------------------------------
+   TABLET
+----------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .team-hero {
+        min-height: 600px;
+    }
+
+
+    .team-hero-content {
+        min-height: 600px;
+
+        padding-top: 80px;
+    }
+
+
+    .team-hero-detail {
+        right: 5%;
+    }
+
+}
+
+
+/* -----------------------------------------------------
+   CELULAR
+----------------------------------------------------- */
+
+@media (max-width: 650px) {
+
+    .team-hero {
+        min-height: 650px;
+    }
+
+
+    .team-hero-content {
+        min-height: 650px;
+
+        align-items: flex-end;
+
+        padding-bottom: 95px;
+    }
+
+
+    .team-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(12,20,17,.35) 0%,
+                rgba(12,20,17,.72) 40%,
+                rgba(12,20,17,.96) 100%
+            );
+    }
+
+
+    .team-hero-bg {
+        background-position: 62% center;
+    }
+
+
+    .team-hero-text h1 {
+        font-size: 45px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .team-hero-text p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .team-hero-detail {
+        display: none;
+    }
+
+
+    .team-hero-scroll {
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .team-hero {
+
+        min-height: 0;
+
+    }
+
+    .team-hero-content {
+
+        min-height: 0;
+
+        padding-top: 105px;
+
+        padding-bottom: 78px;
+
+    }
+
+    .team-hero-text h1 {
+
+        font-size: clamp(2.35rem, 12vw, 2.8rem);
+
+    }
+
+    .team-hero-text p {
+
+        font-size: .92rem;
+
+        line-height: 1.7;
+
+        margin-bottom: 26px;
+
+    }
+
+    .team-hero-button {
+
+        width: 100%;
+
+        justify-content: center;
+
+        padding: 13px 14px;
+
+        font-size: .88rem;
+
+    }
+
+    .team-hero-scroll {
+
+        display: none;
+
+    }
+
+    .team-intro-grid > * {
+
+        min-width: 0;
+
+    }
+
+    .team-intro-heading h2 {
+
+        max-width: 100%;
+
+        font-size: clamp(32px, 10vw, 40px);
+
+        overflow-wrap: anywhere;
+
+    }
+
+    .professional-team .section-heading {
+
+        min-width: 0;
+
+    }
+
+    .professional-team .section-heading h2 {
+
+        max-width: 100%;
+
+        font-size: clamp(32px, 10vw, 40px);
+
+        overflow-wrap: anywhere;
+
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .team-hero-content {
+
+        padding-top: 92px;
+
+    }
+
+    .team-hero-text h1 {
+
+        font-size: 2.25rem;
+
+    }
+
+    .team-hero-text p {
+
+        font-size: .88rem;
+
+    }
+
+}/* =====================================================
+   INTRO EQUIPO — ESTILO PREMIUM OSCURO
+===================================================== */
+
+.team-intro {
+    position: relative;
+
+    background: #151b18;
+
+    color: #ffffff;
+
+    padding: 125px 0;
+
+    overflow: hidden;
+}
+
+
+/* -----------------------------------------------------
+   DETALLE DE FONDO
+----------------------------------------------------- */
+
+.team-intro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(190, 163, 108, 0.08);
+
+    right: -230px;
+    top: -250px;
+
+    pointer-events: none;
+}
+
+
+.team-intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(190, 163, 108, 0.025);
+
+    left: -170px;
+    bottom: -170px;
+
+    pointer-events: none;
+}
+
+
+/* -----------------------------------------------------
+   GRID
+----------------------------------------------------- */
+
+.team-intro-grid {
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.85fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+/* -----------------------------------------------------
+   ENCABEZADO
+----------------------------------------------------- */
+
+.team-intro-heading {
+    position: relative;
+}
+
+
+.team-intro-heading .eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 24px;
+
+    color: #c7ad78;
+
+    letter-spacing: 2.5px;
+}
+
+
+.team-intro-heading .eyebrow::before {
+    content: "";
+
+    width: 40px;
+    height: 1px;
+
+    background: #c7ad78;
+}
+
+
+.team-intro-heading h2 {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(44px, 5vw, 68px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+
+    letter-spacing: -1.5px;
+
+    color: #ffffff;
+}
+
+
+.team-intro-heading h2 em {
+    display: block;
+
+    color: #c7ad78;
+
+    font-style: italic;
+
+    font-weight: 500;
+}
+
+
+/* -----------------------------------------------------
+   LÍNEA DECORATIVA
+----------------------------------------------------- */
+
+.team-intro-line {
+    width: 75px;
+    height: 2px;
+
+    margin-top: 38px;
+
+    background: #c7ad78;
+
+    position: relative;
+}
+
+
+.team-intro-line::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 6px;
+
+    width: 35px;
+    height: 1px;
+
+    background: rgba(199,173,120,.35);
+}
+
+
+/* -----------------------------------------------------
+   TEXTO
+----------------------------------------------------- */
+
+.team-intro-copy {
+    position: relative;
+
+    padding-left: 50px;
+}
+
+
+.team-intro-copy::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(199,173,120,.7),
+            transparent
+        );
+}
+
+
+.team-intro-copy p {
+    margin: 0 0 25px;
+
+    color: rgba(255,255,255,.72);
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+.team-intro-copy p:first-child {
+    color: rgba(255,255,255,.9);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* -----------------------------------------------------
+   FIRMA
+----------------------------------------------------- */
+
+.team-intro-signature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 35px;
+}
+
+
+.team-intro-signature span {
+    width: 35px;
+    height: 1px;
+
+    background: #c7ad78;
+}
+
+
+.team-intro-signature small {
+    color: rgba(255,255,255,.45);
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* -----------------------------------------------------
+   HOVER SUTIL
+----------------------------------------------------- */
+
+.team-intro-heading,
+.team-intro-copy {
+    transition: transform .5s ease;
+}
+
+
+.team-intro-heading:hover {
+    transform: translateX(5px);
+}
+
+
+/* -----------------------------------------------------
+   TABLET
+----------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .team-intro {
+        padding: 100px 0;
+    }
+
+
+    .team-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .team-intro-copy {
+        padding-left: 35px;
+
+        max-width: 700px;
+    }
+
+}
+
+
+/* -----------------------------------------------------
+   CELULAR
+----------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .team-intro {
+        padding: 80px 0;
+    }
+
+
+    .team-intro-grid {
+        gap: 45px;
+    }
+
+
+    .team-intro-heading h2 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .team-intro-copy {
+        padding-left: 25px;
+    }
+
+
+    .team-intro-copy p:first-child {
+        font-size: 16px;
+    }
+
+
+    .team-intro-copy p {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+}
+/* =====================================================
+   BOTÓN MÁS INFORMACIÓN — ELEGANTE
+===================================================== */
+
+.info-button {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 16px;
+
+    width: fit-content;
+
+    margin-top: auto;
+    padding: 10px 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #9f814d;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+/* -----------------------------------------------------
+   LÍNEA INFERIOR
+----------------------------------------------------- */
+
+.info-button::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 2px;
+
+    width: 38px;
+    height: 1px;
+
+    background: #b89a62;
+
+    transition:
+        width .4s ease,
+        background .3s ease;
+}
+
+
+/* -----------------------------------------------------
+   CÍRCULO DE LA FLECHA
+----------------------------------------------------- */
+
+.info-button i {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid rgba(184,154,98,.6);
+
+    border-radius: 50%;
+
+    color: #b89a62;
+
+    font-size: 14px;
+
+    transition:
+        transform .4s ease,
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+}
+
+
+/* -----------------------------------------------------
+   HOVER
+----------------------------------------------------- */
+
+.info-button:hover {
+
+    color: #765b31;
+
+    transform: translateX(4px);
+
+}
+
+
+.info-button:hover::after {
+
+    width: 100%;
+
+    background: #b89a62;
+
+}
+
+
+.info-button:hover i {
+
+    transform: translateX(7px);
+
+    background: #b89a62;
+
+    border-color: #b89a62;
+
+    color: #ffffff;
+
+}

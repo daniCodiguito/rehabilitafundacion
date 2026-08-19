@@ -1,0 +1,2236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Fundación Terapéutica Rehabilita - Centro privado de rehabilitación de drogas y alcoholismo.">
+
+    <title>Fundación Terapéutica Rehabilita</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<!-- =====================================================
+     POPUPS DE TALLERES Y TERAPIAS
+===================================================== -->
+
+<div class="program-modal" id="programModal" aria-hidden="true">
+
+    <div class="program-modal-overlay"></div>
+
+    <div class="program-modal-box" role="dialog" aria-modal="true">
+
+        <!-- BOTÓN CERRAR -->
+
+        <button
+            class="program-modal-close"
+            type="button"
+            aria-label="Cerrar">
+
+            <i class="bi bi-x-lg"></i>
+
+        </button>
+
+
+        <!-- PARTE SUPERIOR -->
+
+        <div class="program-modal-header">
+
+            <div class="program-modal-icon">
+
+                <i id="modalIcon" class="bi bi-heart-pulse"></i>
+
+            </div>
+
+            <div>
+
+                <span
+                    class="program-modal-category"
+                    id="modalCategory">
+
+                    TALLER
+                </span>
+
+                <h2 id="modalTitle">
+                    Título
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <!-- LÍNEA DECORATIVA -->
+
+        <div class="program-modal-line"></div>
+
+
+        <!-- DESCRIPCIÓN -->
+
+        <div class="program-modal-content">
+
+            <p
+                class="program-modal-description"
+                id="modalDescription">
+
+            </p>
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="program-modal-info-grid">
+
+
+                <!-- OBJETIVO -->
+
+                <div class="program-modal-info">
+
+                    <div class="program-modal-info-icon">
+
+                        <i class="bi bi-bullseye"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Objetivo
+                        </span>
+
+                        <p id="modalObjective">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BENEFICIOS -->
+
+                <div class="program-modal-info">
+
+                    <div class="program-modal-info-icon">
+
+                        <i class="bi bi-stars"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Beneficios
+                        </span>
+
+                        <p id="modalBenefits">
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUÉ SE TRABAJA -->
+
+            <div class="program-modal-work">
+
+                <div class="program-modal-work-title">
+
+                    <i class="bi bi-check2-circle"></i>
+
+                    <span>
+                        ¿Qué se trabaja?
+                    </span>
+
+                </div>
+
+
+                <ul id="modalWork">
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="program-modal-footer">
+
+            <span>
+
+                <i class="bi bi-heart"></i>
+
+                Acompañamiento integral
+
+            </span>
+
+            <button
+                class="program-modal-action"
+                type="button">
+
+                <span>
+                    Cerrar
+                </span>
+
+                <i class="bi bi-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header" id="inicio">
+
+    <div class="container nav-wrap">
+
+<a href="index.html" class="brand">
+    <span class="brand-logo-wrap">
+        <img
+            src="https://www.rehabilitafundacion.cl/wp-content/uploads/2026/08/ChatGPT-Image-2-ago-2026-10_19_59-p.m..jpg"
+            alt="Fundación Terapéutica Rehabilita"
+            class="brand-logo">
+    </span>
+</a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <nav class="main-nav">
+
+            <a href="#nosotros">
+                Nosotros
+            </a>
+
+            <a href="nuestroequipo.html">
+                Nuestro equipo
+            </a>         <a
+                href="nuestracomunidad.html"
+                class="active">
+
+                Nuestra comunidad
+
+            </a>
+
+            <a href="#talleres">
+                Talleres
+            </a>
+
+            <a href="#terapias">
+                Terapias
+            </a>
+
+            <a href="#preguntas">
+                Preguntas frecuentes
+            </a>
+
+            <a href="#contacto" class="nav-cta">
+                Contáctanos
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+<!-- =====================================================
+     HERO PREMIUM
+===================================================== -->
+
+<section class="hero hero-premium">
+
+    <!-- Imagen de fondo -->
+    <div
+        class="hero-premium-image"
+        style="background-image: url('assets/img/hero/hero.jpg');">
+    </div>
+
+    <!-- Degradado -->
+    <div class="hero-premium-overlay"></div>
+
+
+    <div class="container hero-premium-content">
+
+        <div class="hero-premium-text reveal">
+
+            <span class="hero-premium-eyebrow">
+                FUNDACIÓN TERAPÉUTICA REHABILITA
+            </span>
+
+
+            <div class="hero-premium-line"></div>
+
+
+            <h1>
+                Un nuevo comienzo
+                <br>
+                <em>es posible.</em>
+            </h1>
+
+
+            <p>
+                Acompañamos a personas y familias en el camino
+                hacia la recuperación, entregando apoyo profesional,
+                humano e integral en cada etapa del proceso.
+            </p>
+
+
+            <div class="hero-premium-actions">
+
+                <a
+                    href="#nosotros"
+                    class="hero-btn hero-btn-primary">
+
+                    Conoce nuestra fundación
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+
+                <a
+                    href="#contacto"
+                    class="hero-btn hero-btn-secondary">
+
+                    Solicitar orientación
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-premium-note">
+
+                <i class="bi bi-heart"></i>
+
+                <span>
+                    Acompañamiento · Tratamiento · Reinserción
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Indicador inferior -->
+
+    <div class="hero-scroll">
+
+        <span>
+            Descubre nuestro trabajo
+        </span>
+
+        <i class="bi bi-arrow-down"></i>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PILARES DESTACADOS
+===================================================== -->
+
+<section class="hero-pillars">
+
+    <div class="container hero-pillars-grid">
+
+        <!-- 01 -->
+
+        <article class="hero-pillar">
+
+            <div class="hero-pillar-top">
+
+                <span class="hero-pillar-number">
+                    
+                </span>
+
+                <i class="bi bi-arrow-up-right"></i>
+
+            </div>
+
+            <h3>
+                Rehabilitación
+                <br>
+                <em>y reinserción</em>
+            </h3>
+
+            <p>
+               En nuestro centro privado de rehabilitación de drogas nos preocupamos de rehabilitar y reinsertar al usuario, el abandono o reducción en el consumo de drogas es solo el primer paso en la vida social.
+            </p>
+
+        </article>
+
+
+        <!-- 02 -->
+
+        <article class="hero-pillar">
+
+            <div class="hero-pillar-top">
+
+                <span class="hero-pillar-number">
+                    
+                </span>
+
+                <i class="bi bi-people"></i>
+
+            </div>
+
+            <h3>
+                Equipo
+                <br>
+                <em>profesional</em>
+            </h3>
+
+            <p>
+               Contamos con un equipo clínico profesional y experto, con un trato personalizado en el tratamiento de rehabilitación del usuario.
+            </p>
+
+        </article>
+
+
+        <!-- 03 -->
+
+        <article class="hero-pillar">
+
+            <div class="hero-pillar-top">
+
+                <span class="hero-pillar-number">
+                    
+                </span>
+
+                <i class="bi bi-heart"></i>
+
+            </div>
+
+            <h3>
+                Familia
+            </h3>
+
+            <p>
+                En Fundación Terapéutica Rehabilita, centro privado de rehabilitación, sabemos que el consumo de drogas no afecta solo al individuo, si no que además repercute en el núcleo familiar, es por esto que brindamos apoyo y ayuda a la familia involucrad
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section class="intro section intro-after-hero">
+
+    <div class="container intro-grid">
+
+        <div class="reveal">
+
+            <span class="eyebrow dark">
+                Fundación Terapéutica Rehabilita
+            </span>
+
+            <h2>
+                Centro privado de rehabilitación
+                de drogas y alcoholismo
+                <em>a su alcance</em>
+            </h2>
+
+        </div>
+
+
+        <div class="intro-copy reveal">
+
+            <p>
+                Fundación Terapéutica Rehabilita es un centro privado de rehabilitación de drogas, dedicado a la evaluación, tratamiento y seguimiento de personas que padecen drogodependecia. El consumo de drogas genera graves consecuencias a nivel individual, familiar y social del usuario, por esto, es que utilizamos tratamientos actualizados y efectivos que han demostrado altos niveles de rehabilitación.
+            </p>
+
+            <p>
+                El consumo de drogas puede generar consecuencias
+                a nivel individual, familiar y social. Por esto
+                trabajamos con tratamientos y estrategias
+                actualizadas, acompañando cada proceso de
+                manera personalizada.
+            </p>
+
+        </div>
+
+    </div>
+
+
+  
+
+</section>
+
+
+
+<!-- =====================================================
+     NOSOTROS
+===================================================== -->
+
+<section class="about section" id="nosotros">
+
+    <div class="container about-grid">
+
+        <div class="about-image reveal">
+
+            <img
+                src="assets/img/ig2.jpg"
+                alt="Fundación Terapéutica Rehabilita">
+
+        </div>
+
+
+        <div class="about-content reveal">
+
+            <span class="eyebrow">
+                Nosotros
+            </span>
+
+            <h2>
+                Fundación
+                <em>Rehabilita</em>
+            </h2>
+
+            <p>
+                Fundación Terapéutica Rehabilita es un centro
+                privado de rehabilitación de drogas que surge
+                desde la experiencia humana de personas que
+                desearon ayudar a otros a salir adelante y
+                recuperarse de una enfermedad como la adicción
+                y el alcoholismo.
+            </p>
+
+            <p>
+                Creemos que la voluntad personal, junto con
+                un equipo profesional capacitado y comprometido,
+                puede favorecer un proceso de recuperación
+                significativo.
+            </p>
+
+
+            <div class="mission-grid">
+
+                <div>
+
+                    <h3>
+                        Visión
+                    </h3>
+
+                    <p>
+                        Ser una institución reconocida por su
+                        eficacia en el diagnóstico y tratamiento
+                        de adicciones, manteniendo una experiencia
+                        de calidad humana para usuarios y familias.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Misión
+                    </h3>
+
+                    <p>
+                        Aportar tratamiento integral a quienes
+                        desean rehabilitarse, apoyando dimensiones
+                        biopsicosociales, conciencia de enfermedad,
+                        habilidades sociales y autocuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container standards reveal">
+
+        <div>
+
+            <span class="eyebrow dark">
+                Nuestro estándar
+            </span>
+
+            <h2>
+                Calidad humana y trabajo
+                <em>multidisciplinario</em>
+            </h2>
+
+        </div>
+
+<ul class="about-highlights">
+
+    <li>
+        <span class="highlight-icon">✦</span>
+
+        <span>
+            Trabajo con personas que desean rehabilitarse
+            y enfrentar la adicción como una enfermedad.
+        </span>
+    </li>
+
+
+    <li>
+        <span class="highlight-icon">✦</span>
+
+        <span>
+            Equipo multidisciplinario y convenios con
+            profesionales especializados.
+        </span>
+    </li>
+
+
+    <li>
+        <span class="highlight-icon">✦</span>
+
+        <span>
+            Rehabilitación y reinserción laboral,
+            social y familiar.
+        </span>
+    </li>
+
+
+    <li>
+        <span class="highlight-icon">✦</span>
+
+        <span>
+            Metodología sistémica, incorporando
+            dimensiones cognitivas y conductuales.
+        </span>
+    </li>
+
+
+    <li>
+        <span class="highlight-icon">✦</span>
+
+        <span>
+            Trabajo basado en comunidad, grupo y
+            acompañamiento terapéutico.
+        </span>
+    </li>
+
+</ul>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TALLERES
+===================================================== -->
+
+<section class="programs section" id="talleres">
+
+    <div class="container section-heading reveal">
+
+        <span class="eyebrow">
+            Talleres
+        </span>
+
+        <h2>
+            Herramientas para
+            <br>
+            <em>volver a construir.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="container card-grid">
+
+
+        <!-- TALLER 1 -->
+
+        <article class="service-card reveal">
+
+            <div class="service-image">
+
+                <img
+                    src="assets/img/recaida.jpg"
+                    alt="Taller de prevención de recaídas">
+
+                
+
+            </div>
+
+
+            <div class="service-body">
+
+                <h3>
+                    Prevención de
+                    <em>recaídas</em>
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Herramientas para reconocer situaciones
+                    de riesgo y fortalecer estrategias
+                    de afrontamiento.
+                </p>
+
+                <button
+                    class="info-button"
+                    data-modal="recaidas">
+
+                    <span>
+                        Más información
+                    </span>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- TALLER 2 -->
+
+        <article class="service-card reveal">
+
+            <div class="service-image">
+
+                <img
+                    src="assets/img/fisico.jpg"
+                    alt="Taller de acondicionamiento físico">
+
+               
+
+            </div>
+
+
+            <div class="service-body">
+
+                <h3>
+                    Acondicionamiento
+                    <em>físico</em>
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Actividad física orientada al bienestar,
+                    hábitos saludables y recuperación integral.
+                </p>
+
+                <button
+                    class="info-button"
+                    data-modal="fisico">
+
+                    <span>
+                        Más información
+                    </span>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- TALLER 3 -->
+
+        <article class="service-card reveal">
+
+            <div class="service-image">
+
+                <img
+                    src="assets/img/teatro.jpg"
+                    alt="Taller de teatro">
+
+               
+
+            </div>
+
+
+            <div class="service-body">
+
+                <h3>
+                    Taller de
+                    <em>teatro</em>
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Expresión, creatividad, comunicación
+                    y participación dentro de una
+                    experiencia grupal.
+                </p>
+
+                <button
+                    class="info-button"
+                    data-modal="teatro">
+
+                    <span>
+                        Más información
+                    </span>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- TALLER 4 -->
+
+        <article class="service-card reveal">
+
+            <div class="service-image">
+
+                <img
+                    src="assets/img/cognitivo.jpg"
+                    alt="Taller de habilidades cognitivas">
+
+               
+
+            </div>
+
+
+            <div class="service-body">
+
+                <h3>
+                    Habilidades
+                    <em>cognitivas</em>
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Actividades destinadas a estimular
+                    atención, memoria, planificación
+                    y resolución de problemas.
+                </p>
+
+                <button
+                    class="info-button"
+                    data-modal="cognitivas">
+
+                    <span>
+                        Más información
+                    </span>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     numeros
+    
+===================================================== -->
+
+<section class="stats-section ">
+
+    <div class="container">
+
+        <div class="stats-heading">
+            <span class="eyebrow">Nuestro compromiso</span>
+
+            <h2>
+                Experiencia que acompaña
+                <em>cada proceso.</em>
+            </h2>
+
+            <p>
+                Trabajamos junto a nuestros usuarios y sus familias
+                entregando un acompañamiento integral durante el
+                proceso de rehabilitación y reinserción.
+            </p>
+        </div>
+
+
+        <div class="stats-grid">
+
+            <article class="stat-item">
+
+                <div class="stat-number">
+                    <span class="counter"
+                          data-target="10">
+                        0
+                    </span>
+                    <small>+</small>
+                </div>
+
+                <h3>Años de experiencia</h3>
+
+                <p>
+                    Comprometidos con el acompañamiento
+                    de procesos de rehabilitación.
+                </p>
+
+            </article>
+
+
+            <article class="stat-item">
+
+                <div class="stat-number">
+                    <span class="counter"
+                          data-target="250">
+                        0
+                    </span>
+                    <small>+</small>
+                </div>
+
+                <h3>Personas rehabilitadas</h3>
+
+                <p>
+                    Personas que han iniciado un nuevo
+                    camino junto a nosotros.
+                </p>
+
+            </article>
+
+
+            <article class="stat-item">
+
+                <div class="stat-number">
+                    <span class="counter"
+                          data-target="15">
+                        0
+                    </span>
+                    <small>+</small>
+                </div>
+
+                <h3>Profesionales</h3>
+
+                <p>
+                    Un equipo multidisciplinario
+                    comprometido con cada usuario.
+                </p>
+
+            </article>
+
+
+            <article class="stat-item">
+
+                <div class="stat-number">
+                    <span class="counter"
+                          data-target="4">
+                        0
+                    </span>
+                </div>
+
+                <h3>Áreas de acompañamiento</h3>
+
+                <p>
+                    Un enfoque integral que considera
+                    al usuario y su entorno.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TERAPIAS
+===================================================== -->
+
+<section class="therapies section intro-after-hero" id="terapias">
+
+    <div class="container section-heading reveal">
+
+        <span class="eyebrow">
+            Terapias
+        </span>
+
+        <h2>
+            Un proceso que considera
+            <br>
+            <em>a la persona y su entorno.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="container card-grid">
+
+
+        <!-- TERAPIA FAMILIAR -->
+
+        <article class="service-card therapy-card reveal">
+
+            <div class="service-image">
+
+                <img
+                    src="assets/img/terapiafamiliar.jpg"
+                    alt="Terapia familiar">
+
+                <span>
+                    
+                </span>
+
+            </div>
+
+
+            <div class="service-body">
+
+                <h3>
+                    Terapia
+                    <em>familiar</em>
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Orientación y participación familiar
+                    para fortalecer el apoyo al proceso.
+                </p>
+
+                <button
+                    class="info-button"
+                    data-modal="familiar">
+
+                    <span>
+                        Más información
+                    </span>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- TERAPIA INDIVIDUAL -->
+
+        <article class="service-card therapy-card reveal">
+
+            <div class="service-image">
+
+                <img
+                    src="assets/img/terapiaindividual.jpg"
+                    alt="Terapia individual">
+
+                <span>
+                    
+                </span>
+
+            </div>
+
+
+            <div class="service-body">
+
+                <h3>
+                    Terapia
+                    <em>individual</em>
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Espacio personalizado para comprender
+                    causas, riesgos y herramientas de manejo.
+                </p>
+
+                <button
+                    class="info-button"
+                    data-modal="individual">
+
+                    <span>
+                        Más información
+                    </span>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- TERAPIA URBANIDAD -->
+
+        <article class="service-card therapy-card reveal">
+
+            <div class="service-image">
+
+                <img
+                    src="assets/img/terapiarurbano.jpg"
+                    alt="Terapia de urbanidad">
+
+                <span>
+                    
+                </span>
+
+            </div>
+
+
+            <div class="service-body">
+
+                <h3>
+                    Terapia de
+                    <em>urbanidad</em>
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Práctica cotidiana de responsabilidades,
+                    convivencia y habilidades sociales.
+                </p>
+
+                <button
+                    class="info-button"
+                    data-modal="urbanidad">
+
+                    <span>
+                        Más información
+                    </span>
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     NUESTRO ENFOQUE
+===================================================== -->
+
+<section class="approach-section">
+
+    <div class="container">
+
+        <!-- ENCABEZADO -->
+
+        <div class="approach-header reveal">
+
+            <div class="approach-heading">
+
+                <span class="eyebrow dark">
+                    Nuestro enfoque
+                </span>
+
+                <h2>
+                    Un proceso que mira
+                    <br>
+                    <em>a la persona en su totalidad.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="approach-intro">
+
+                <p>
+                    Entendemos la recuperación como un proceso
+                    que requiere acompañamiento, compromiso y
+                    herramientas que permitan avanzar de manera
+                    progresiva hacia una vida más saludable y
+                    una adecuada reinserción.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             TARJETAS DE ENFOQUE
+        ================================================== -->
+
+        <div class="approach-grid">
+
+
+            <!-- 01 -->
+
+            <article class="approach-card reveal">
+
+                <div class="approach-top">
+
+                    <span class="approach-number">
+                        01
+                    </span>
+
+                    <i class="bi bi-person-heart"></i>
+
+                </div>
+
+
+                <div class="approach-content">
+
+                    <h3>
+                        Recuperación
+                        <em>consciente</em>
+                    </h3>
+
+                    <p>
+                        Trabajamos con personas que desean
+                        rehabilitarse y enfrentar la adicción
+                        comprendiendo esta problemática como
+                        una enfermedad que puede ser abordada
+                        con apoyo profesional.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 02 -->
+
+            <article class="approach-card reveal">
+
+                <div class="approach-top">
+
+                    <span class="approach-number">
+                        02
+                    </span>
+
+                    <i class="bi bi-people"></i>
+
+                </div>
+
+
+                <div class="approach-content">
+
+                    <h3>
+                        Equipo
+                        <em>multidisciplinario</em>
+                    </h3>
+
+                    <p>
+                        Integramos distintas áreas profesionales
+                        y contamos con colaboración de especialistas
+                        para entregar una mirada amplia y
+                        personalizada de cada proceso.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 03 -->
+
+            <article class="approach-card reveal">
+
+                <div class="approach-top">
+
+                    <span class="approach-number">
+                        03
+                    </span>
+
+                    <i class="bi bi-arrow-up-right-circle"></i>
+
+                </div>
+
+
+                <div class="approach-content">
+
+                    <h3>
+                        Rehabilitación
+                        <em>y reinserción</em>
+                    </h3>
+
+                    <p>
+                        Buscamos acompañar el desarrollo de
+                        herramientas que favorezcan la reinserción
+                        laboral, social y familiar, fortaleciendo
+                        progresivamente la autonomía.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 04 -->
+
+            <article class="approach-card reveal">
+
+                <div class="approach-top">
+
+                    <span class="approach-number">
+                        04
+                    </span>
+
+                    <i class="bi bi-hand-heart"></i>
+
+                </div>
+
+
+                <div class="approach-content">
+
+                    <h3>
+                        Comunidad y
+                        <em>acompañamiento</em>
+                    </h3>
+
+                    <p>
+                        Creemos en el valor del trabajo en comunidad,
+                        los espacios grupales y el acompañamiento
+                        terapéutico como elementos importantes
+                        dentro del proceso de recuperación.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 05 -->
+
+            <article class="approach-card reveal">
+
+                <div class="approach-top">
+
+                    <span class="approach-number">
+                        05
+                    </span>
+
+                    <i class="bi bi-stars"></i>
+
+                </div>
+
+
+                <div class="approach-content">
+
+                    <h3>
+                        Fortalecimiento
+                        <em>personal</em>
+                    </h3>
+
+                    <p>
+                        Favorecemos el desarrollo de habilidades,
+                        autoestima, autonomía y hábitos saludables
+                        que permitan a cada persona avanzar
+                        progresivamente en su proceso.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 06 -->
+
+            <article class="approach-card reveal">
+
+                <div class="approach-top">
+
+                    <span class="approach-number">
+                        06
+                    </span>
+
+                    <i class="bi bi-house-heart"></i>
+
+                </div>
+
+
+                <div class="approach-content">
+
+                    <h3>
+                        Familia y
+                        <em>entorno</em>
+                    </h3>
+
+                    <p>
+                        Incorporamos el entorno familiar como
+                        parte importante del proceso, entregando
+                        orientación y herramientas que permitan
+                        construir relaciones y apoyos más saludables.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section><!-- =====================================================
+     TESTIMONIOS
+===================================================== -->
+
+<section class="testimonials section" id="testimonios">
+
+    <div class="container">
+
+        <!-- ENCABEZADO -->
+
+        <div class="testimonials-heading reveal">
+
+            <div class="testimonials-title">
+
+                <span class="eyebrow dark">
+                    Historias reales
+                </span>
+
+                <h2>
+                    Historias de
+                    <em>esperanza.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="testimonials-intro">
+
+                <span class="testimonial-line"></span>
+
+                <p>
+                    Cada proceso de recuperación es diferente.
+                    Compartimos algunas experiencias que reflejan
+                    el valor del acompañamiento, la confianza y
+                    la posibilidad de construir un nuevo comienzo.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARRUSEL -->
+
+        <div class="testimonials-slider">
+
+
+            <button
+                class="testimonial-arrow testimonial-prev"
+                type="button"
+                aria-label="Testimonios anteriores">
+
+                <i class="bi bi-arrow-left"></i>
+
+            </button>
+
+
+            <div class="testimonials-viewport">
+
+                <div class="testimonials-track">
+
+
+                    <!-- 01 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                01
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            El proceso me ayudó a volver a confiar
+                            en mí y a entender que pedir ayuda también
+                            es una forma de avanzar.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                A
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Proceso de rehabilitación
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 02 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                02
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            Aprendí que la recuperación no es solo
+                            dejar una sustancia, sino volver a construir
+                            hábitos, vínculos y nuevas formas de enfrentar
+                            las dificultades.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                R
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Proceso de rehabilitación
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 03 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                03
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            Mi familia también encontró herramientas
+                            para acompañarme de una manera más sana,
+                            aprendiendo a escuchar y comprender el proceso.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                M
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Familiar de residente
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 04 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                04
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            Encontré un espacio donde pude sentirme
+                            escuchado y acompañado. Poco a poco comencé
+                            a recuperar la confianza en mí mismo.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                J
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Proceso de rehabilitación
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 05 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                05
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            Aprendimos como familia que acompañar
+                            también significa escuchar, comprender
+                            y establecer límites saludables.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                C
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Familiar de residente
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 06 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                06
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            Hoy puedo mirar hacia adelante con nuevas
+                            herramientas y con una visión diferente
+                            de mi futuro.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                D
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Proceso de rehabilitación
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 07 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                07
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            Volver a compartir con mi familia y recuperar
+                            pequeñas cosas de la vida cotidiana fue una
+                            de las partes más importantes de mi proceso.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                P
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Proceso de rehabilitación
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 08 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                08
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            Comprendí que pedir ayuda no era una señal
+                            de debilidad, sino el primer paso para comenzar
+                            a cambiar mi vida.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                S
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Proceso de rehabilitación
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 09 -->
+
+                    <article class="testimonial">
+
+                        <div class="testimonial-top">
+
+                            <span class="testimonial-number">
+                                09
+                            </span>
+
+                            <i class="bi bi-quote"></i>
+
+                        </div>
+
+
+                        <p>
+                            Como familia aprendimos que el proceso
+                            también requiere paciencia, comunicación
+                            y compromiso de todos.
+                        </p>
+
+
+                        <div class="testimonial-bottom">
+
+                            <div class="person-avatar">
+                                L
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Testimonio anónimo
+                                </strong>
+
+                                <span>
+                                    Familiar de residente
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- FLECHAS -->
+
+         
+
+
+            <button
+                class="testimonial-arrow testimonial-next"
+                type="button"
+                aria-label="Siguiente">
+
+                <i class="bi bi-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- INDICADORES -->
+
+        <div class="testimonial-controls">
+
+            <div class="testimonial-dots"></div>
+
+            <span class="testimonial-progress">
+                Desliza para conocer más experiencias
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================================
+     PREGUNTAS FRECUENTES
+===================================================== -->
+
+<section class="faq section" id="preguntas">
+
+    <div class="container faq-grid">
+
+        <div class="section-heading reveal">
+
+            <span class="eyebrow">
+                Preguntas frecuentes
+            </span>
+
+            <h2>
+                Información para
+                <br>
+                <em>dar el primer paso.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="accordion reveal">
+
+
+            <details open>
+
+                <summary>
+
+                    ¿Es posible salir de la droga?
+
+                    <i class="bi bi-plus"></i>
+
+                </summary>
+
+                <p>
+                    Sí. Los trastornos por consumo de sustancias
+                    pueden tratarse y pedir ayuda es un paso importante.
+                    La recuperación puede requerir tiempo, acompañamiento
+                    profesional y estrategias adaptadas a cada persona.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+
+                    ¿La marihuana es adictiva?
+
+                    <i class="bi bi-plus"></i>
+
+                </summary>
+
+                <p>
+                    Sí. Algunas personas que consumen cannabis
+                    desarrollan un trastorno por consumo de cannabis.
+                    El riesgo puede variar según factores como la
+                    edad de inicio, frecuencia y cantidad de consumo.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+
+                    ¿La familia participa en el proceso?
+
+                    <i class="bi bi-plus"></i>
+
+                </summary>
+
+                <p>
+                    La participación familiar puede ser un componente
+                    importante cuando forma parte del plan terapéutico,
+                    especialmente para mejorar comunicación, apoyo
+                    y límites saludables.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+
+                    ¿La rehabilitación termina al dejar de consumir?
+
+                    <i class="bi bi-plus"></i>
+
+                </summary>
+
+                <p>
+                    No necesariamente. La recuperación también puede
+                    involucrar habilidades sociales, hábitos saludables,
+                    prevención de recaídas, relaciones familiares
+                    y reinserción.
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     CONTACTO / MAPA
+===================================================== -->
+<!-- =====================================================
+     UBICACIÓN
+===================================================== -->
+
+<section class="location-section" id="contacto">
+
+    <div class="container location-container">
+
+        <!-- TEXTO -->
+
+        <div class="location-intro reveal">
+
+            <span class="eyebrow">
+                Dónde encontrarnos
+            </span>
+
+            <h2>
+                Estamos para
+                <br>
+                <em>orientarte.</em>
+            </h2>
+
+            <p>
+                Visítanos y conoce nuestro espacio.
+                Estamos aquí para acompañarte en cada
+                paso del proceso.
+            </p>
+
+        </div>
+
+
+        <!-- MAPA -->
+
+        <div class="location-map reveal">
+
+            <div class="map-label">
+
+                <i class="bi bi-geo-alt"></i>
+
+                <span>
+                    Nuestra ubicación
+                </span>
+
+            </div>
+
+
+            <iframe
+                src="https://www.google.com/maps?q=Calle%20Ramón%20Subercaseaux%207955%2C%20Pirque%2C%20Santiago&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación Fundación Terapéutica Rehabilita">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a
+    class="whatsapp-float"
+    href="https://wa.me/56959602947"
+    target="_blank"
+    rel="noopener"
+    aria-label="WhatsApp">
+
+    <i class="bi bi-whatsapp"></i>
+
+</a>
+
+<footer class="footer-premium">
+
+    <div class="container footer-premium-main">
+
+        <div class="footer-premium-message">
+
+            <span>
+                FUNDACIÓN TERAPÉUTICA REHABILITA
+            </span>
+
+            <h3>
+                Un nuevo comienzo
+                <em>es posible.</em>
+            </h3>
+
+            <p>
+                Acompañamos cada proceso con humanidad,
+                compromiso y esperanza.
+            </p>
+
+        </div>
+
+
+        <div class="footer-premium-contact">
+
+            <small>
+                CONTÁCTANOS
+            </small>
+
+            <div class="footer-premium-socials">
+
+                <a
+                    href="https://wa.me/56959602947"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="WhatsApp">
+
+                    <i class="bi bi-whatsapp"></i>
+
+                </a>
+
+
+                <a
+                    href="mailto:Rehabilitafundacion@gmail.com"
+                    aria-label="Correo">
+
+                    <i class="bi bi-envelope"></i>
+
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/fundacionterapeuticarehabilita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram">
+
+                    <i class="bi bi-instagram"></i>
+
+                </a>
+
+
+                <a
+                    href="https://web.facebook.com/fundacionrehabilitaoficial?_rdc=1&_rdr#"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook">
+
+                    <i class="bi bi-facebook"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-premium-bottom">
+
+        <span>
+            © <span id="year"></span>
+            Fundación Terapéutica Rehabilita
+        </span>
+
+        <span>
+            Pirque · Santiago
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- JavaScript -->
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

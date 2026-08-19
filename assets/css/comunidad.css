@@ -1,0 +1,1645 @@
+/* =====================================================
+   PÁGINA NUESTRA COMUNIDAD
+   Fundación Terapéutica Rehabilita
+===================================================== */
+
+
+/* =====================================================
+   HERO COMUNIDAD
+===================================================== */
+
+.community-hero {
+
+    min-height: 78vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #102f2a;
+
+}
+
+
+.community-hero-bg {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        url("../img/ig2.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    transform: scale(1.04);
+
+    animation: communityHeroZoom 12s ease-out forwards;
+
+}
+    
+
+@keyframes communityHeroZoom {
+
+    from {
+        transform: scale(1.08);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+
+.community-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 36, 32, .94) 0%,
+            rgba(10, 36, 32, .78) 42%,
+            rgba(10, 36, 32, .28) 100%
+        );
+
+}
+
+
+.community-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.community-hero-text {
+
+    max-width: 700px;
+
+    padding: 150px 0 120px;
+
+}
+
+
+.community-hero-line {
+
+    width: 70px;
+
+    height: 2px;
+
+    background: #c6a96b;
+
+    margin: 24px 0 28px;
+
+}
+
+
+.community-hero h1 {
+
+    margin: 0;
+
+    color: white;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3.2rem, 6vw, 6.5rem);
+
+    line-height: .98;
+
+    font-weight: 500;
+
+    letter-spacing: -3px;
+
+}
+
+
+.community-hero h1 em {
+
+    color: #d4b875;
+
+    font-style: italic;
+
+}
+
+
+.community-hero p {
+
+    max-width: 600px;
+
+    margin: 30px 0 35px;
+
+    color: rgba(255,255,255,.82);
+
+    font-size: 1.08rem;
+
+    line-height: 1.8;
+
+}
+
+
+.community-hero-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px 22px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid rgba(255,255,255,.35);
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+
+}
+
+
+.community-hero-button i {
+
+    transition: transform .3s ease;
+
+}
+
+
+.community-hero-button:hover {
+
+    background: rgba(255,255,255,.1);
+
+    border-color: rgba(255,255,255,.7);
+
+    transform: translateY(-3px);
+
+}
+
+
+.community-hero-button:hover i {
+
+    transform: translateY(4px);
+
+}
+
+
+.community-hero-scroll {
+
+    position: absolute;
+
+    z-index: 3;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: .72rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+.community-hero-scroll i {
+
+    animation: scrollArrow 1.8s ease-in-out infinite;
+
+}
+
+
+@keyframes scrollArrow {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(6px);
+
+    }
+
+}
+
+
+
+/* =====================================================
+   INTRODUCCIÓN
+===================================================== */
+
+.community-intro {
+
+    padding: 130px 0;
+
+    background: #f5f2eb;
+
+}
+
+
+.community-intro-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px, .8fr)
+        minmax(400px, 1.2fr);
+
+    gap: 100px;
+
+    align-items: start;
+
+}
+
+
+.community-intro-title h2 {
+
+    margin: 20px 0 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.8rem, 5vw, 5rem);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    color: #183d36;
+
+}
+
+
+.community-intro-title h2 em {
+
+    color: #b29455;
+
+    font-style: italic;
+
+}
+
+
+.community-intro-text {
+
+    max-width: 650px;
+
+}
+
+
+.community-intro-text p {
+
+    margin: 0 0 22px;
+
+    color: #59635f;
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+
+.community-intro-signature {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+    color: #183d36;
+
+    font-size: .75rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.community-intro-signature span {
+
+    width: 45px;
+
+    height: 1px;
+
+    background: #b29455;
+
+}
+
+
+
+/* =====================================================
+   GALERÍA
+===================================================== */
+
+.community-gallery-section {
+
+    padding: 130px 0;
+
+    background: #fff;
+
+}
+
+
+.community-gallery-heading {
+
+    display: grid;
+
+    grid-template-columns: 1fr 400px;
+
+    gap: 80px;
+
+    align-items: end;
+
+    margin-bottom: 70px;
+
+}
+
+
+.community-gallery-heading h2 {
+
+    margin: 20px 0 0;
+
+    font-family: "Playfair Display", serif;
+
+    color: #183d36;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: .98;
+
+    font-weight: 500;
+
+}
+
+
+.community-gallery-heading h2 em {
+
+    color: #b29455;
+
+    font-style: italic;
+
+}
+
+
+.community-gallery-heading > p {
+
+    margin: 0;
+
+    color: #68716e;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* =====================================================
+   GALERÍA GRID
+===================================================== */
+
+.community-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    grid-auto-rows: 250px;
+
+    gap: 18px;
+
+}
+
+
+
+/* =====================================================
+   FOTOS
+===================================================== */
+
+.community-photo {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    background: #ddd;
+
+    border-radius: 3px;
+
+    isolation: isolate;
+
+}
+
+
+.community-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(.2,.8,.2,1),
+        filter .6s ease;
+
+}
+
+
+.community-photo:hover img {
+
+    transform: scale(1.07);
+
+    filter: brightness(.72);
+
+}
+
+
+
+/* =====================================================
+   TAMAÑOS DE FOTOS
+===================================================== */
+
+.photo-large {
+
+    grid-column: span 2;
+
+    grid-row: span 2;
+
+}
+
+
+.photo-normal {
+
+    grid-column: span 1;
+
+    grid-row: span 1;
+
+}
+
+
+.photo-tall {
+
+    grid-column: span 1;
+
+    grid-row: span 2;
+
+}
+
+
+.photo-wide {
+
+    grid-column: span 2;
+
+    grid-row: span 1;
+
+}
+
+
+
+/* =====================================================
+   OVERLAY DE LAS FOTOS
+===================================================== */
+
+.photo-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15,54,47,.15),
+            rgba(15,54,47,.55)
+        );
+
+    opacity: 0;
+
+    transition: opacity .4s ease;
+
+}
+
+
+.community-photo:hover .photo-overlay {
+
+    opacity: 1;
+
+}
+
+
+.photo-overlay-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.75);
+
+    border-radius: 50%;
+
+    color: white;
+
+    transform: scale(.75);
+
+    transition:
+        transform .4s ease,
+        background .3s ease;
+
+}
+
+
+.community-photo:hover .photo-overlay-icon {
+
+    transform: scale(1);
+
+}
+
+
+.photo-overlay-icon i {
+
+    font-size: 1.15rem;
+
+}
+
+
+
+/* =====================================================
+   PIE DE GALERÍA
+===================================================== */
+
+.community-gallery-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 60px;
+
+}
+
+
+.community-gallery-footer-line {
+
+    width: 70px;
+
+    height: 1px;
+
+    background: #c7b071;
+
+}
+
+
+.community-gallery-footer p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-family: "Playfair Display", serif;
+
+    font-style: italic;
+
+    text-align: center;
+
+}
+
+
+
+/* =====================================================
+   BLOQUE FINAL
+===================================================== */
+
+.community-final {
+
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #173d36;
+
+}
+
+
+.community-final-bg {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        url("../img/comunidad/comunidad-08.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.community-final-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12,46,40,.96),
+            rgba(12,46,40,.67)
+        );
+
+}
+
+
+.community-final-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    padding: 100px 0;
+
+}
+
+
+.community-final h2 {
+
+    margin: 22px 0;
+
+    color: white;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3rem, 5vw, 5.5rem);
+
+    line-height: 1;
+
+    font-weight: 500;
+
+}
+
+
+.community-final h2 em {
+
+    color: #d1b36d;
+
+    font-style: italic;
+
+}
+
+
+.community-final p {
+
+    max-width: 620px;
+
+    color: rgba(255,255,255,.78);
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 32px;
+
+}
+
+
+.community-final-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px 23px;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.4);
+
+    text-decoration: none;
+
+    transition: .3s ease;
+
+}
+
+
+.community-final-button:hover {
+
+    background: white;
+
+    color: #173d36;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =====================================================
+   LIGHTBOX
+===================================================== */
+
+.community-lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+
+    background:
+        rgba(7,25,22,.96);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity .35s ease,
+        visibility .35s ease;
+
+}
+
+
+.community-lightbox.open {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+}
+
+
+.community-lightbox-content {
+
+    position: relative;
+
+    width: auto;
+
+    max-width: min(1100px, 85vw);
+
+    max-height: 85vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.community-lightbox-content img {
+
+    display: block;
+
+    max-width: 100%;
+
+    max-height: 76vh;
+
+    object-fit: contain;
+
+    box-shadow:
+        0 30px 100px rgba(0,0,0,.45);
+
+}
+
+
+
+/* =====================================================
+   CAPTION LIGHTBOX
+===================================================== */
+
+.community-lightbox-caption {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 18px;
+
+    color: white;
+
+}
+
+
+.community-lightbox-caption span {
+
+    color: #cbb16e;
+
+    font-size: .72rem;
+
+    letter-spacing: 2px;
+
+}
+
+
+.community-lightbox-caption strong {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.15rem;
+
+    font-weight: 500;
+
+}
+
+
+
+/* =====================================================
+   BOTONES LIGHTBOX
+===================================================== */
+
+.community-lightbox-close,
+.community-lightbox-prev,
+.community-lightbox-next {
+
+    position: absolute;
+
+    z-index: 5;
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.06);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+
+}
+
+
+.community-lightbox-close:hover,
+.community-lightbox-prev:hover,
+.community-lightbox-next:hover {
+
+    background: rgba(255,255,255,.15);
+
+}
+
+
+.community-lightbox-close {
+
+    top: 30px;
+
+    right: 30px;
+
+}
+
+
+.community-lightbox-prev {
+
+    left: 35px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+}
+
+
+.community-lightbox-next {
+
+    right: 35px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+}
+
+
+.community-lightbox-prev:hover {
+
+    transform:
+        translateY(-50%)
+        translateX(-3px);
+
+}
+
+
+.community-lightbox-next:hover {
+
+    transform:
+        translateY(-50%)
+        translateX(3px);
+
+}
+
+
+
+/* =====================================================
+   ANIMACIONES REVEAL
+===================================================== */
+
+.community-gallery .reveal,
+.community-intro .reveal,
+.community-final .reveal {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+.community-gallery .reveal.visible,
+.community-intro .reveal.visible,
+.community-final .reveal.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+
+/* =====================================================
+   ANIMACIÓN ESCALONADA DE LAS FOTOS
+===================================================== */
+
+.community-photo:nth-child(1) {
+
+    transition-delay: .05s;
+
+}
+
+
+.community-photo:nth-child(2) {
+
+    transition-delay: .10s;
+
+}
+
+
+.community-photo:nth-child(3) {
+
+    transition-delay: .15s;
+
+}
+
+
+.community-photo:nth-child(4) {
+
+    transition-delay: .20s;
+
+}
+
+
+.community-photo:nth-child(5) {
+
+    transition-delay: .25s;
+
+}
+
+
+.community-photo:nth-child(6) {
+
+    transition-delay: .30s;
+
+}
+
+
+.community-photo:nth-child(7) {
+
+    transition-delay: .35s;
+
+}
+
+
+.community-photo:nth-child(8) {
+
+    transition-delay: .40s;
+
+}
+
+
+.community-photo:nth-child(9) {
+
+    transition-delay: .45s;
+
+}
+
+
+
+/* =====================================================
+   EFECTO DE ENTRADA DE LA GALERÍA
+===================================================== */
+
+@keyframes galleryPhotoIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(.97);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .community-gallery {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+
+/* =====================================================
+   TABLET PEQUEÑA
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .community-intro-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+    }
+
+
+    .community-gallery-heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .community-gallery {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        grid-auto-rows: 240px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MÓVIL
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .community-hero {
+
+        min-height: 720px;
+
+    }
+
+
+    .community-hero-text {
+
+        padding: 130px 0 100px;
+
+    }
+
+
+    .community-hero h1 {
+
+        font-size: clamp(2.8rem, 13vw, 4rem);
+
+        letter-spacing: -1.5px;
+
+    }
+
+
+    .community-hero p {
+
+        font-size: .98rem;
+
+    }
+
+
+    .community-hero-button {
+
+        padding: 14px 18px;
+
+        max-width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .community-hero-scroll {
+
+        width: 100%;
+
+        justify-content: center;
+
+        font-size: .62rem;
+
+    }
+
+
+    .community-intro {
+
+        padding: 90px 0;
+
+    }
+
+
+    .community-intro-grid {
+
+        gap: 35px;
+
+    }
+
+
+    .community-intro-title h2 {
+
+        font-size: clamp(2.5rem, 12vw, 4rem);
+
+    }
+
+
+    .community-gallery-section {
+
+        padding: 90px 0;
+
+    }
+
+
+    .community-gallery-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .community-gallery-heading h2 {
+
+        font-size: clamp(2.7rem, 12vw, 4rem);
+
+    }
+
+
+    .community-gallery {
+
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 300px;
+
+        gap: 14px;
+
+    }
+
+
+    .photo-large,
+    .photo-normal,
+    .photo-tall,
+    .photo-wide {
+
+        grid-column: span 1;
+
+        grid-row: span 1;
+
+    }
+
+
+    .photo-large {
+
+        grid-row: span 1;
+
+    }
+
+
+    .community-gallery-footer {
+
+        gap: 12px;
+
+    }
+
+
+    .community-gallery-footer-line {
+
+        width: 25px;
+
+    }
+
+
+    .community-final {
+
+        min-height: 600px;
+
+    }
+
+
+    .community-final-content {
+
+        padding: 90px 0;
+
+    }
+
+
+    .community-final h2 {
+
+        font-size: clamp(2.8rem, 12vw, 4rem);
+
+    }
+
+
+    .community-lightbox {
+
+        padding: 20px;
+
+    }
+
+
+    .community-lightbox-content {
+
+        max-width: 100%;
+
+        width: 100%;
+
+    }
+
+
+    .community-lightbox-content img {
+
+        max-width: 100%;
+
+        max-height: 72vh;
+
+    }
+
+
+    .community-lightbox-close {
+
+        top: 18px;
+
+        right: 18px;
+
+        width: 46px;
+
+        height: 46px;
+
+    }
+
+
+    .community-lightbox-prev,
+    .community-lightbox-next {
+
+        width: 44px;
+
+        height: 44px;
+
+        top: auto;
+
+        bottom: 30px;
+
+    }
+
+
+    .community-lightbox-prev {
+
+        left: 25%;
+
+    }
+
+
+    .community-lightbox-next {
+
+        right: 25%;
+
+    }
+
+
+    .community-lightbox-caption {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 7px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MÓVILES MUY PEQUEÑOS
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .community-hero {
+
+        min-height: 0;
+
+    }
+
+    .community-hero-text {
+
+        padding: 105px 0 82px;
+
+        max-width: 100%;
+
+    }
+
+
+    .community-hero h1 {
+
+        font-size: clamp(2.35rem, 12vw, 2.7rem);
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .community-hero p {
+
+        font-size: .92rem;
+
+        line-height: 1.7;
+
+        margin: 24px 0 28px;
+
+    }
+
+    .community-hero-button {
+
+        width: 100%;
+
+        padding: 13px 14px;
+
+        gap: 10px;
+
+        font-size: .88rem;
+
+    }
+
+
+    .community-gallery {
+
+        grid-auto-rows: 260px;
+
+    }
+
+
+    .community-lightbox-prev {
+
+        left: 20%;
+
+    }
+
+
+    .community-lightbox-next {
+
+        right: 20%;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   ACCESIBILIDAD
+===================================================== */
+
+.community-photo:focus-visible,
+.community-hero-button:focus-visible,
+.community-final-button:focus-visible,
+.community-lightbox-close:focus-visible,
+.community-lightbox-prev:focus-visible,
+.community-lightbox-next:focus-visible {
+
+    outline: 2px solid #d1b36d;
+
+    outline-offset: 4px;
+
+}
+
+
+
+/* =====================================================
+   REDUCIR ANIMACIONES SI EL USUARIO LO SOLICITA
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .community-hero-bg {
+
+        animation: none;
+
+        transform: scale(1);
+
+    }
+
+
+    .community-hero-scroll i {
+
+        animation: none;
+
+    }
+
+
+    .community-photo img {
+
+        transition: none;
+
+    }
+
+
+    .community-gallery .reveal,
+    .community-intro .reveal,
+    .community-final .reveal {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+}
+.main-nav a.active {
+    color: #b29455;
+}
+
+.main-nav a.active::after {
+    width: 100%;
+}
+
+@media (max-width: 360px) {
+
+    .community-hero-text {
+
+        padding-top: 92px;
+
+    }
+
+    .community-hero h1 {
+
+        font-size: 2.25rem;
+
+    }
+
+    .community-hero p {
+
+        font-size: .88rem;
+
+    }
+
+    .community-hero-scroll {
+
+        bottom: 18px;
+
+        font-size: .56rem;
+
+    }
+
+}
