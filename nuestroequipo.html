@@ -1,1598 +1,1105 @@
-/* =====================================================
-   PÁGINA NUESTRO EQUIPO
-===================================================== */
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
 
-/* =====================================================
-   HEADER
-===================================================== */
+    <meta charset="UTF-8">
 
-.main-nav a.active {
-    color: #c7aa6c;
-}
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-.main-nav a.active::after {
-    width: 100%;
-}
+    <meta name="description"
+          content="Conoce al equipo profesional de Fundación Terapéutica Rehabilita. Profesionales y colaboradores que acompañan cada etapa del proceso de recuperación.">
 
+    <title>Nuestro equipo | Fundación Terapéutica Rehabilita</title>
 
-/* =====================================================
-   HERO
-===================================================== */
 
-.team-hero {
-    position: relative;
+    <!-- Google Fonts -->
 
-    min-height: 610px;
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    display: flex;
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    align-items: center;
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
-    background: #10201a;
 
-    overflow: hidden;
-}
+    <!-- Bootstrap Icons -->
 
-.team-hero-bg {
-    position: absolute;
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    inset: 0;
 
-    background:
-        radial-gradient(
-            circle at 80% 30%,
-            rgba(199,170,108,.16),
-            transparent 30%
-        ),
-        radial-gradient(
-            circle at 10% 90%,
-            rgba(54,91,75,.25),
-            transparent 35%
-        );
-}
+    <!-- CSS -->
 
-.team-hero-bg::after {
-    content: "";
+    <link
+        rel="stylesheet"
+        href="assets/css/styles.css">
 
-    position: absolute;
 
-    width: 600px;
-    height: 600px;
+    <!-- CSS específico -->
 
-    right: -280px;
-    top: -150px;
+    <link
+        rel="stylesheet"
+        href="assets/css/equipo.css">
 
-    border: 1px solid rgba(199,170,108,.12);
+</head>
 
-    border-radius: 50%;
-}
 
-.team-hero-content {
-    position: relative;
+<body>
 
-    z-index: 2;
 
-    display: grid;
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-    grid-template-columns: 1fr 380px;
+<header class="site-header">
 
-    align-items: center;
+    <div class="container nav-wrap">
 
-    gap: 80px;
-}
 
-.team-hero-text {
-    max-width: 720px;
-}
+<a href="index.html" class="brand">
+    <span class="brand-logo-wrap">
+        <img
+            src="https://www.rehabilitafundacion.cl/wp-content/uploads/2026/08/ChatGPT-Image-2-ago-2026-10_19_59-p.m..jpg"
+            alt="Fundación Terapéutica Rehabilita"
+            class="brand-logo">
+    </span>
+</a>
 
-.team-hero-text .eyebrow {
-    color: #c7aa6c;
-}
 
-.team-hero-text h1 {
-    margin: 22px 0;
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false">
 
-    color: #ffffff;
+            <i class="bi bi-list"></i>
 
-    font-family: "Playfair Display", serif;
+        </button>
 
-    font-size: clamp(50px, 7vw, 78px);
 
-    line-height: .98;
+        <nav class="main-nav">
 
-    font-weight: 600;
-}
 
-.team-hero-text h1 em {
-    color: #c7aa6c;
+            <a href="index.html#nosotros">
+                Nosotros
+            </a>
 
-    font-style: italic;
-}
 
-.team-hero-text p {
-    max-width: 600px;
+            <a
+                href="nuestroequipo.html"
+                class="active">
 
-    margin: 0 0 32px;
+                Nuestro equipo
 
-    color: rgba(255,255,255,.63);
+            </a>
+                     <a
+                href="nuestracomunidad.html"
+                >
 
-    font-size: 16px;
+                Nuestra comunidad
 
-    line-height: 1.8;
-}
+            </a>
 
-.team-hero-button {
-    display: inline-flex;
 
-    align-items: center;
+            <a href="index.html#talleres">
+                Talleres
+            </a>
 
-    gap: 14px;
 
-    padding: 14px 20px;
+            <a href="index.html#terapias">
+                Terapias
+            </a>
 
-    border: 1px solid rgba(199,170,108,.5);
 
-    color: #fff;
+            <a href="index.html#preguntas">
+                Preguntas frecuentes
+            </a>
 
-    text-decoration: none;
 
-    font-size: 12px;
+            <a
+                href="index.html#contacto"
+                class="nav-cta">
 
-    font-weight: 600;
+                Contáctanos
 
-    transition: .3s ease;
-}
+                <i class="bi bi-arrow-up-right"></i>
 
-.team-hero-button:hover {
-    background: #c7aa6c;
+            </a>
 
-    color: #10201a;
+        </nav>
 
-    transform: translateY(-2px);
-}
+    </div>
 
-.team-hero-symbol {
-    display: flex;
+</header>
 
-    align-items: center;
 
-    justify-content: center;
-}
 
-.symbol-circle {
-    width: 270px;
-    height: 270px;
+<main>
 
-    display: flex;
 
-    align-items: center;
-    justify-content: center;
+<!-- =====================================================
+     HERO EQUIPO
+===================================================== -->
 
-    border: 1px solid rgba(199,170,108,.25);
+<section class="team-hero">
 
-    border-radius: 50%;
+    <!-- Imagen de fondo -->
+    <div
+        class="team-hero-bg"
+        style="background-image: url('assets/img/nuestroequipo.jpg');">
+    </div>
 
-    color: #c7aa6c;
 
-    font-size: 85px;
+    <!-- Overlay -->
+    <div class="team-hero-overlay"></div>
 
-    box-shadow:
-        0 0 0 35px rgba(199,170,108,.025),
-        0 0 0 70px rgba(199,170,108,.015);
-}
 
+    <div class="container team-hero-content">
 
-/* =====================================================
-   INTRO
-===================================================== */
 
-.team-intro {
-    background: #f5f4ef;
-}
+        <div class="team-hero-text reveal">
 
-.team-intro-grid {
-    display: grid;
+            <span class="eyebrow">
+                Nuestro equipo
+            </span>
 
-    grid-template-columns: .9fr 1fr;
 
-    gap: 100px;
+            <h1>
 
-    align-items: center;
-}
+                Personas detrás de
+                <br>
 
-.team-intro h2 {
-    margin: 18px 0 0;
+                <em>cada proceso.</em>
 
-    color: #1a2c25;
+            </h1>
 
-    font-family: "Playfair Display", serif;
 
-    font-size: clamp(38px, 5vw, 58px);
+            <p>
 
-    line-height: 1.05;
-}
+                Nuestro trabajo reúne distintas miradas,
+                experiencias y áreas de acompañamiento para
+                abordar cada proceso de recuperación de manera
+                integral, profesional y humana.
 
-.team-intro h2 em {
-    color: #a98c56;
+            </p>
 
-    font-style: italic;
-}
 
-.team-intro-copy {
-    max-width: 620px;
-}
+            <a
+                href="#equipo-profesional"
+                class="team-hero-button">
 
-.team-intro-copy p {
-    margin: 0 0 18px;
+                Conoce a nuestro equipo
 
-    color: #65716b;
+                <i class="bi bi-arrow-down"></i>
 
-    font-size: 15px;
+            </a>
 
-    line-height: 1.9;
-}
+        </div>
 
 
-/* =====================================================
-   EQUIPO
-===================================================== */
+        <!-- Detalle decorativo -->
 
-.professional-team {
-    background: #ffffff;
-}
+        <div class="team-hero-detail">
 
-.professional-grid {
-    display: grid;
+            <span></span>
 
-    grid-template-columns: repeat(2, 1fr);
+            <small>
+                Acompañamiento
+                <br>
+                profesional
+            </small>
 
-    gap: 28px;
-}
+        </div>
 
-.professional-card {
-    display: grid;
+    </div>
 
-    grid-template-columns: 210px 1fr;
 
-    min-height: 340px;
+    <!-- Indicador inferior -->
 
-    background: #f5f5f1;
+    <div class="team-hero-scroll">
 
-    border: 1px solid rgba(16,32,26,.07);
+        <span></span>
 
-    overflow: hidden;
+        Desplázate para conocer al equipo
 
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease;
-}
+    </div>
 
-.professional-card:hover {
-    transform: translateY(-7px);
+</section>
 
-    box-shadow:
-        0 25px 55px rgba(16,32,26,.12);
-}
 
-.professional-card-featured {
-    background: #eef0eb;
-}
+<!-- =====================================================
+     EQUIPO PROFESIONAL
+===================================================== -->
 
-.professional-photo {
-    position: relative;
+<section
+    class="professional-team section"
+    id="equipo-profesional">
 
-    min-height: 100%;
 
-    background:
-        linear-gradient(
-            145deg,
-            #dce2dc,
-            #bdc9c0
-        );
+    <div class="container section-heading reveal">
 
-    overflow: hidden;
-}
+        <span class="eyebrow">
+            Equipo profesional
+        </span>
 
-.professional-placeholder {
-    position: absolute;
 
-    inset: 0;
+        <h2>
 
-    display: flex;
+            Experiencia,
+            <br>
 
-    align-items: center;
+            <em>compromiso y acompañamiento.</em>
 
-    justify-content: center;
+        </h2>
 
-    color: rgba(16,32,26,.25);
 
-    font-size: 65px;
-}
+        <p>
 
-.professional-number {
-    position: absolute;
+            Conoce las personas que forman parte de nuestro
+            trabajo diario.
 
-    left: 16px;
-    bottom: 16px;
+        </p>
 
-    color: rgba(255,255,255,.85);
+    </div>
 
-    font-size: 11px;
 
-    letter-spacing: .12em;
-}
 
-.professional-info {
-    padding: 32px 28px;
-}
+    <div class="container professional-grid">
 
-.professional-area {
-    display: block;
 
-    margin-bottom: 10px;
+        <!-- =================================================
+             MARCELA
+        ================================================= -->
 
-    color: #a98c56;
+        <article class="professional-card professional-card-featured reveal">
 
-    font-size: 9px;
 
-    font-weight: 700;
+            <div class="professional-photo">
 
-    letter-spacing: .16em;
+                <div class="professional-placeholder">
 
-    text-transform: uppercase;
-}
+                    <i class="bi bi-person"></i>
 
-.professional-info h3 {
-    margin: 0 0 9px;
+                </div>
 
-    color: #1a2c25;
 
-    font-family: "Playfair Display", serif;
+                <span class="professional-number">
+                    01
+                </span>
 
-    font-size: 25px;
+            </div>
 
-    line-height: 1.15;
-}
 
-.professional-info strong {
-    display: block;
+            <div class="professional-info">
 
-    color: #53625b;
+                <span class="professional-area">
+                    Dirección
+                </span>
 
-    font-size: 11px;
 
-    line-height: 1.5;
-}
+                <h3>
+                    Marcela Villegas Medina
+                </h3>
 
-.professional-info p {
-    margin: 17px 0;
 
-    color: #6d7772;
+                <strong>
+                    Directora General
+                </strong>
 
-    font-size: 12px;
 
-    line-height: 1.75;
-}
+                <p>
 
-.professional-line {
-    width: 35px;
-    height: 1px;
+                    Responsable de la dirección general y
+                    coordinación institucional, contribuyendo
+                    a que el trabajo del centro mantenga una
+                    orientación coherente con sus objetivos y
+                    principios de atención.
 
-    margin: 18px 0;
+                </p>
 
-    background: #c7aa6c;
-}
 
-.professional-focus {
-    display: flex;
+                <div class="professional-line"></div>
 
-    align-items: center;
 
-    gap: 7px;
+                <span class="professional-focus">
 
-    margin-top: 6px;
+                    <i class="bi bi-check2"></i>
 
-    color: #68746d;
+                    Dirección y coordinación institucional
 
-    font-size: 10px;
-}
+                </span>
 
-.professional-focus i {
-    color: #b0935d;
-}
+            </div>
 
+        </article>
 
-/* =====================================================
-   TALLERES
-===================================================== */
 
-.workshop-team {
-    background: #f5f4ef;
-}
 
-.workshop-grid {
-    display: grid;
+        <!-- =================================================
+             ANDRÉS
+        ================================================= -->
 
-    grid-template-columns: repeat(2, 1fr);
+        <article class="professional-card professional-card-featured reveal">
 
-    gap: 20px;
-}
 
-.workshop-person {
-    display: grid;
+            <div class="professional-photo">
 
-    grid-template-columns: 70px 1fr;
+                <div class="professional-placeholder">
 
-    gap: 22px;
+                    <i class="bi bi-heart-pulse"></i>
 
-    padding: 30px;
+                </div>
 
-    background: #ffffff;
 
-    border: 1px solid rgba(16,32,26,.07);
+                <span class="professional-number">
+                    02
+                </span>
 
-    transition: .3s ease;
-}
+            </div>
 
-.workshop-person:hover {
-    transform: translateY(-4px);
 
-    box-shadow:
-        0 18px 40px rgba(16,32,26,.08);
-}
+            <div class="professional-info">
 
-.workshop-icon {
-    width: 65px;
-    height: 65px;
+                <span class="professional-area">
+                    Área clínica
+                </span>
 
-    display: flex;
 
-    align-items: center;
-    justify-content: center;
+                <h3>
+                    Andrés Eduardo
+                    Franzani García
+                </h3>
 
-    border-radius: 50%;
 
-    background: #eef0e9;
+                <strong>
+                    Médico Psiquiatra
+                </strong>
 
-    color: #a98c56;
 
-    font-size: 25px;
-}
+                <p>
 
-.workshop-person > div:last-child > span {
-    color: #a98c56;
+                    Médico cirujano y especialista en Psiquiatría
+                    de Adultos. Su área de trabajo permite
+                    incorporar evaluación y manejo médico
+                    especializado dentro del proceso de
+                    rehabilitación.
 
-    font-size: 9px;
+                </p>
 
-    font-weight: 700;
 
-    letter-spacing: .15em;
+                <div class="professional-line"></div>
 
-    text-transform: uppercase;
-}
 
-.workshop-person h3 {
-    margin: 5px 0;
+                <span class="professional-focus">
 
-    color: #1a2c25;
+                    <i class="bi bi-check2"></i>
 
-    font-family: "Playfair Display", serif;
+                    Psiquiatría y atención de adultos
 
-    font-size: 23px;
-}
+                </span>
 
-.workshop-person strong {
-    color: #53625b;
 
-    font-size: 11px;
-}
+                <span class="professional-focus">
 
-.workshop-person p {
-    margin: 13px 0 0;
+                    <i class="bi bi-check2"></i>
 
-    color: #707a75;
+                    Abordaje especializado en adicciones
 
-    font-size: 12px;
+                </span>
 
-    line-height: 1.7;
-}
+            </div>
 
+        </article>
 
-/* =====================================================
-   CTA
-===================================================== */
 
-.team-cta {
-    background: #10201a;
 
-    padding: 80px 0;
-}
+        <!-- =================================================
+             CAROLINA
+        ================================================= -->
 
-.team-cta-inner {
-    display: flex;
+        <article class="professional-card reveal">
 
-    align-items: center;
 
-    justify-content: space-between;
+            <div class="professional-photo">
 
-    gap: 50px;
-}
+                <div class="professional-placeholder">
 
-.team-cta .eyebrow {
-    color: #c7aa6c;
-}
+                    <i class="bi bi-person-heart"></i>
 
-.team-cta h2 {
-    max-width: 650px;
+                </div>
 
-    margin: 14px 0 0;
 
-    color: #ffffff;
+                <span class="professional-number">
+                    03
+                </span>
 
-    font-family: "Playfair Display", serif;
+            </div>
 
-    font-size: clamp(35px, 5vw, 55px);
 
-    line-height: 1.05;
-}
+            <div class="professional-info">
 
-.team-cta h2 em {
-    color: #c7aa6c;
+                <span class="professional-area">
+                    Área clínica
+                </span>
 
-    font-style: italic;
-}
 
-.team-cta-button {
-    display: inline-flex;
+                <h3>
+                    Carolina
+                </h3>
 
-    align-items: center;
 
-    gap: 12px;
+                <strong>
+                    Psicóloga y Directora Clínica
+                </strong>
 
-    padding: 15px 22px;
 
-    border: 1px solid #c7aa6c;
+                <p>
 
-    color: #ffffff;
+                    Participa en la orientación psicológica y
+                    coordinación clínica del proceso terapéutico,
+                    considerando las necesidades emocionales,
+                    conductuales y relacionales de cada persona.
 
-    text-decoration: none;
+                </p>
 
-    font-size: 12px;
 
-    font-weight: 600;
+                <div class="professional-line"></div>
 
-    white-space: nowrap;
 
-    transition: .3s ease;
-}
+                <span class="professional-focus">
 
-.team-cta-button:hover {
-    background: #c7aa6c;
+                    <i class="bi bi-check2"></i>
 
-    color: #10201a;
-}
+                    Acompañamiento psicológico
 
+                </span>
 
-/* =====================================================
-   TABLET
-===================================================== */
 
-@media (max-width: 1000px) {
+                <span class="professional-focus">
 
-    .team-hero-content {
-        grid-template-columns: 1fr;
-    }
+                    <i class="bi bi-check2"></i>
 
-    .team-hero-symbol {
-        display: none;
-    }
+                    Coordinación clínica
 
-    .team-intro-grid {
-        grid-template-columns: 1fr;
+                </span>
 
-        gap: 35px;
-    }
+            </div>
 
-    .professional-grid {
-        grid-template-columns: 1fr;
-    }
+        </article>
 
-}
 
 
-/* =====================================================
-   MOBILE
-===================================================== */
+        <!-- =================================================
+             ANDRES CASTILLO
+        ================================================= -->
 
-@media (max-width: 650px) {
+        <article class="professional-card reveal">
 
-    .team-hero {
-        min-height: 570px;
-    }
 
-    .team-hero-text h1 {
-        font-size: 48px;
-    }
+            <div class="professional-photo">
 
-    .team-hero-text p {
-        font-size: 14px;
-    }
+                <div class="professional-placeholder">
 
-    .professional-card {
-        grid-template-columns: 1fr;
-    }
+                    <i class="bi bi-people"></i>
 
-    .professional-photo {
-        min-height: 240px;
-    }
+                </div>
 
-    .professional-info {
-        padding: 25px;
-    }
 
-    .workshop-grid {
-        grid-template-columns: 1fr;
-    }
+                <span class="professional-number">
+                    04
+                </span>
 
-    .workshop-person {
-        grid-template-columns: 55px 1fr;
+            </div>
 
-        padding: 23px;
-    }
 
-    .workshop-icon {
-        width: 52px;
-        height: 52px;
+            <div class="professional-info">
 
-        font-size: 20px;
-    }
+                <span class="professional-area">
+                    Área terapéutica
+                </span>
 
-    .team-cta-inner {
-        flex-direction: column;
 
-        align-items: flex-start;
-    }
+                <h3>
+                    Andres Castillo
+                </h3>
 
-}/* =====================================================
-   HERO — NUESTRO EQUIPO
-===================================================== */
 
-.team-hero {
-    position: relative;
+                <strong>
+                    Operador Terapéutico
+                </strong>
 
-    min-height: 650px;
 
-    display: flex;
-    align-items: center;
+                <p>
 
-    overflow: hidden;
+                    Acompaña el trabajo cotidiano de los usuarios,
+                    favoreciendo la participación, convivencia,
+                    adherencia a las actividades y desarrollo
+                    de habilidades necesarias para el proceso
+                    de recuperación.
 
-    background: #18211d;
+                </p>
 
-    color: #ffffff;
-}
 
+                <div class="professional-line"></div>
 
-/* -----------------------------------------------------
-   IMAGEN
------------------------------------------------------ */
 
-.team-hero-bg {
-    position: absolute;
+                <span class="professional-focus">
 
-    inset: 0;
+                    <i class="bi bi-check2"></i>
 
-    background-size: cover;
-    background-position: center;
+                    Acompañamiento cotidiano
 
-    transform: scale(1.02);
+                </span>
 
-    transition: transform 1.5s ease;
-}
+            </div>
 
+        </article>
 
-.team-hero:hover .team-hero-bg {
-    transform: scale(1.05);
-}
 
 
-/* -----------------------------------------------------
-   OVERLAY
------------------------------------------------------ */
+        <!-- =================================================
+             CLAUDIO
+        ================================================= -->
 
-.team-hero-overlay {
-    position: absolute;
+        <article class="professional-card reveal">
 
-    inset: 0;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(12, 20, 17, 0.94) 0%,
-            rgba(12, 20, 17, 0.82) 32%,
-            rgba(12, 20, 17, 0.48) 62%,
-            rgba(12, 20, 17, 0.28) 100%
-        );
+            <div class="professional-photo">
 
-    z-index: 1;
-}
+                <div class="professional-placeholder">
 
+                    <i class="bi bi-heart-pulse"></i>
 
-/* -----------------------------------------------------
-   CONTENIDO
------------------------------------------------------ */
+                </div>
 
-.team-hero-content {
-    position: relative;
 
-    z-index: 2;
+                <span class="professional-number">
+                    05
+                </span>
 
-    min-height: 650px;
+            </div>
 
-    display: flex;
-    align-items: center;
 
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
+            <div class="professional-info">
 
+                <span class="professional-area">
+                    Área de rehabilitación
+                </span>
 
-.team-hero-text {
-    max-width: 700px;
-}
 
+                <h3>
+                    Claudio Morales Huala
+                </h3>
 
-.team-hero-text .eyebrow {
-    display: inline-flex;
 
-    align-items: center;
+                <strong>
+                    Técnico en Rehabilitación
+                    · Técnico Paramédico
+                </strong>
 
-    gap: 12px;
 
-    margin-bottom: 22px;
+                <p>
 
-    color: #d4bd8c;
+                    Participa en el acompañamiento y apoyo de
+                    los procesos de rehabilitación, incorporando
+                    además conocimientos asociados al área
+                    paramédica y al cuidado cotidiano.
 
-    letter-spacing: 2.5px;
-}
+                </p>
 
 
-.team-hero-text .eyebrow::before {
-    content: "";
+                <div class="professional-line"></div>
 
-    width: 38px;
-    height: 1px;
 
-    background: #d4bd8c;
-}
+                <span class="professional-focus">
 
+                    <i class="bi bi-check2"></i>
 
-.team-hero-text h1 {
-    margin: 0 0 25px;
+                    Apoyo en procesos de rehabilitación
 
-    font-family: "Playfair Display", serif;
+                </span>
 
-    font-size: clamp(48px, 6vw, 78px);
+            </div>
 
-    line-height: 1.03;
+        </article>
 
-    font-weight: 500;
 
-    letter-spacing: -1.5px;
 
-    color: #ffffff;
-}
+        <!-- =================================================
+             JUAN PABLO
+        ================================================= -->
 
+        <article class="professional-card reveal">
 
-.team-hero-text h1 em {
-    color: #d4bd8c;
 
-    font-style: italic;
+            <div class="professional-photo">
 
-    font-weight: 500;
-}
+                <div class="professional-placeholder">
 
+                    <i class="bi bi-person-check"></i>
 
-.team-hero-text p {
-    max-width: 580px;
+                </div>
 
-    margin: 0 0 35px;
 
-    color: rgba(255,255,255,.78);
+                <span class="professional-number">
+                    06
+                </span>
 
-    font-size: 17px;
+            </div>
 
-    line-height: 1.8;
-}
 
+            <div class="professional-info">
 
-/* -----------------------------------------------------
-   BOTÓN
------------------------------------------------------ */
+                <span class="professional-area">
+                    Área terapéutica
+                </span>
 
-.team-hero-button {
-    display: inline-flex;
 
-    align-items: center;
+                <h3>
+                    Juan Pablo Campano
+                </h3>
 
-    gap: 14px;
 
-    padding: 15px 23px;
+                <strong>
+                    Operador Terapéutico
+                </strong>
 
-    border: 1px solid rgba(255,255,255,.35);
 
-    border-radius: 50px;
+                <p>
 
-    color: #ffffff;
+                    Forma parte del acompañamiento terapéutico
+                    cotidiano, apoyando la participación de los
+                    usuarios y el desarrollo de rutinas y
+                    habilidades relacionadas con la convivencia
+                    y recuperación.
 
-    text-decoration: none;
+                </p>
 
-    font-size: 14px;
 
-    transition:
-        background .3s ease,
-        border-color .3s ease,
-        transform .3s ease;
-}
+                <div class="professional-line"></div>
 
 
-.team-hero-button i {
-    font-size: 16px;
+                <span class="professional-focus">
 
-    transition: transform .3s ease;
-}
+                    <i class="bi bi-check2"></i>
 
+                    Acompañamiento terapéutico
 
-.team-hero-button:hover {
-    background: #ffffff;
+                </span>
 
-    color: #18211d;
+            </div>
 
-    border-color: #ffffff;
+        </article>
 
-    transform: translateY(-3px);
-}
+    </div>
 
+</section>
 
-.team-hero-button:hover i {
-    transform: translateY(3px);
-}
+<!-- =====================================================
+     INTRO — NUESTRO EQUIPO
+===================================================== -->
 
+<section class="team-intro section">
 
-/* -----------------------------------------------------
-   DETALLE DERECHO
------------------------------------------------------ */
+    <div class="container team-intro-grid">
 
-.team-hero-detail {
-    position: absolute;
 
-    right: 8%;
+        <div class="team-intro-heading reveal">
 
-    bottom: 130px;
+            <span class="eyebrow">
+                Una mirada integral
+            </span>
 
-    z-index: 3;
 
-    display: flex;
+            <h2>
 
-    align-items: center;
+                Cada proceso necesita
+                <em>acompañamiento.</em>
 
-    gap: 15px;
+            </h2>
 
-    color: rgba(255,255,255,.65);
 
-    text-transform: uppercase;
+            <div class="team-intro-line"></div>
 
-    letter-spacing: 2px;
+        </div>
 
-    font-size: 10px;
-}
 
+        <div class="team-intro-copy reveal">
 
-.team-hero-detail span {
-    width: 45px;
-    height: 1px;
+            <p>
 
-    background: #d4bd8c;
-}
+                En Fundación Terapéutica Rehabilita contamos
+                con profesionales y colaboradores de distintas
+                áreas que participan en el acompañamiento de
+                nuestros usuarios.
 
+            </p>
 
-/* -----------------------------------------------------
-   SCROLL
------------------------------------------------------ */
 
-.team-hero-scroll {
-    position: absolute;
+            <p>
 
-    bottom: 28px;
-    left: 50%;
+                La intervención puede incorporar dimensiones
+                clínicas, terapéuticas, familiares, sociales,
+                físicas y recreativas, de acuerdo con las
+                necesidades de cada proceso.
 
-    transform: translateX(-50%);
+            </p>
 
-    z-index: 4;
 
-    display: flex;
+            <div class="team-intro-signature">
 
-    align-items: center;
+                <span></span>
 
-    gap: 12px;
+                <small>
+                    Fundación Terapéutica Rehabilita
+                </small>
 
-    color: rgba(255,255,255,.6);
+            </div>
 
-    font-size: 10px;
+        </div>
 
-    text-transform: uppercase;
+    </div>
 
-    letter-spacing: 1.5px;
+</section>
 
-    white-space: nowrap;
-}
+<!-- =====================================================
+     TALLERES
+===================================================== -->
 
+<section class="workshop-team section">
 
-.team-hero-scroll span {
-    width: 30px;
-    height: 1px;
 
-    background: rgba(255,255,255,.5);
-}
+    <div class="container section-heading reveal">
 
+        <span class="eyebrow">
+            Talleres y actividades
+        </span>
 
-/* -----------------------------------------------------
-   TABLET
------------------------------------------------------ */
 
-@media (max-width: 900px) {
+        <h2>
 
-    .team-hero {
-        min-height: 600px;
-    }
+            Espacios para descubrir
+            <br>
 
+            <em>nuevas herramientas.</em>
 
-    .team-hero-content {
-        min-height: 600px;
+        </h2>
 
-        padding-top: 80px;
-    }
+    </div>
 
 
-    .team-hero-detail {
-        right: 5%;
-    }
 
-}
+    <div class="container workshop-grid">
 
 
-/* -----------------------------------------------------
-   CELULAR
------------------------------------------------------ */
+        <!-- LANA -->
 
-@media (max-width: 650px) {
+        <article class="workshop-person reveal">
 
-    .team-hero {
-        min-height: 650px;
-    }
+            <div class="workshop-icon">
 
+                <i class="bi bi-flower1"></i>
 
-    .team-hero-content {
-        min-height: 650px;
+            </div>
 
-        align-items: flex-end;
 
-        padding-bottom: 95px;
-    }
+            <div>
 
+                <span>
+                    Taller
+                </span>
 
-    .team-hero-overlay {
-        background:
-            linear-gradient(
-                180deg,
-                rgba(12,20,17,.35) 0%,
-                rgba(12,20,17,.72) 40%,
-                rgba(12,20,17,.96) 100%
-            );
-    }
+                <h3>
+                    Francisca Rojas
+                </h3>
 
+                <strong>
+                    Lana Terapia
+                </strong>
 
-    .team-hero-bg {
-        background-position: 62% center;
-    }
 
+                <p>
 
-    .team-hero-text h1 {
-        font-size: 45px;
+                    Espacio creativo que utiliza actividades
+                    manuales como una oportunidad para favorecer
+                    concentración, expresión, paciencia y
+                    participación.
 
-        letter-spacing: -1px;
-    }
+                </p>
 
+            </div>
 
-    .team-hero-text p {
-        font-size: 15px;
+        </article>
 
-        line-height: 1.7;
-    }
 
 
-    .team-hero-detail {
-        display: none;
-    }
+        <!-- TEATRO -->
 
+        <article class="workshop-person reveal">
 
-    .team-hero-scroll {
-        font-size: 9px;
-    }
+            <div class="workshop-icon">
 
-}
+                <i class="bi bi-mask"></i>
 
-@media (max-width: 430px) {
+            </div>
 
-    .team-hero {
 
-        min-height: 0;
+            <div>
 
-    }
+                <span>
+                    Taller
+                </span>
 
-    .team-hero-content {
+                <h3>
+                    Genesis Acevedo
+                </h3>
 
-        min-height: 0;
+                <strong>
+                    Teatro
+                </strong>
 
-        padding-top: 105px;
 
-        padding-bottom: 78px;
+                <p>
 
-    }
+                    El teatro puede ofrecer un espacio de
+                    expresión, creatividad, comunicación y
+                    participación grupal, fortaleciendo la
+                    confianza y las habilidades sociales.
 
-    .team-hero-text h1 {
+                </p>
 
-        font-size: clamp(2.35rem, 12vw, 2.8rem);
+            </div>
 
-    }
+        </article>
 
-    .team-hero-text p {
 
-        font-size: .92rem;
 
-        line-height: 1.7;
+        <!-- YOGA -->
 
-        margin-bottom: 26px;
+        <article class="workshop-person reveal">
 
-    }
+            <div class="workshop-icon">
 
-    .team-hero-button {
+                <i class="bi bi-person-standing"></i>
 
-        width: 100%;
+            </div>
 
-        justify-content: center;
 
-        padding: 13px 14px;
+            <div>
 
-        font-size: .88rem;
+                <span>
+                    Taller
+                </span>
 
-    }
+                <h3>
+                    Joanna Moreno
+                </h3>
 
-    .team-hero-scroll {
+                <strong>
+                    Yoga
+                </strong>
 
-        display: none;
 
-    }
+                <p>
 
-    .team-intro-grid > * {
+                    Actividad orientada al movimiento, respiración
+                    y conexión corporal, como complemento para
+                    favorecer bienestar y autocuidado.
 
-        min-width: 0;
+                </p>
 
-    }
+            </div>
 
-    .team-intro-heading h2 {
+        </article>
 
-        max-width: 100%;
 
-        font-size: clamp(32px, 10vw, 40px);
 
-        overflow-wrap: anywhere;
+        <!-- FÍSICO -->
 
-    }
+        <article class="workshop-person reveal">
 
-    .professional-team .section-heading {
+            <div class="workshop-icon">
 
-        min-width: 0;
+                <i class="bi bi-activity"></i>
 
-    }
+            </div>
 
-    .professional-team .section-heading h2 {
 
-        max-width: 100%;
+            <div>
 
-        font-size: clamp(32px, 10vw, 40px);
+                <span>
+                    Taller
+                </span>
 
-        overflow-wrap: anywhere;
+                <h3>
+                    Matias Castro
+                </h3>
 
-    }
+                <strong>
+                    Acondicionamiento Físico
+                </strong>
 
-}
 
-@media (max-width: 360px) {
+                <p>
 
-    .team-hero-content {
+                    Actividad física orientada a fortalecer
+                    hábitos saludables, movimiento, disciplina
+                    y bienestar físico como parte del
+                    acompañamiento integral.
 
-        padding-top: 92px;
+                </p>
 
-    }
+            </div>
 
-    .team-hero-text h1 {
+        </article>
 
-        font-size: 2.25rem;
+    </div>
 
-    }
+</section>
 
-    .team-hero-text p {
 
-        font-size: .88rem;
 
-    }
 
-}/* =====================================================
-   INTRO EQUIPO — ESTILO PREMIUM OSCURO
-===================================================== */
 
-.team-intro {
-    position: relative;
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
 
-    background: #151b18;
+<a
+    class="whatsapp-float"
+    href="https://wa.me/56959602947"
+    target="_blank"
+    rel="noopener"
+    aria-label="WhatsApp">
 
-    color: #ffffff;
+    <i class="bi bi-whatsapp"></i>
 
-    padding: 125px 0;
+</a>
 
-    overflow: hidden;
-}
 
 
-/* -----------------------------------------------------
-   DETALLE DE FONDO
------------------------------------------------------ */
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-.team-intro::before {
-    content: "";
+<footer class="footer-premium">
 
-    position: absolute;
 
-    width: 500px;
-    height: 500px;
+    <div class="container footer-premium-main">
 
-    border-radius: 50%;
 
-    border: 1px solid rgba(190, 163, 108, 0.08);
+        <div class="footer-premium-message">
 
-    right: -230px;
-    top: -250px;
+           <span class="eyebrow">
+                Estamos para orientarte
+            </span>
 
-    pointer-events: none;
-}
 
+            <h3>
 
-.team-intro::after {
-    content: "";
+                Cada proceso comienza
+                <em>con un primer paso.</em>
 
-    position: absolute;
+            </h3>
 
-    width: 320px;
-    height: 320px;
+        </div>
 
-    border-radius: 50%;
 
-    background: rgba(190, 163, 108, 0.025);
 
-    left: -170px;
-    bottom: -170px;
+        <div class="footer-premium-contact">
 
-    pointer-events: none;
-}
+            <small>
+                CONTÁCTANOS
+            </small>
 
 
-/* -----------------------------------------------------
-   GRID
------------------------------------------------------ */
+            <div class="footer-premium-socials">
 
-.team-intro-grid {
-    position: relative;
 
-    z-index: 2;
+                <a
+                    href="https://wa.me/56959602947"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="WhatsApp">
 
-    display: grid;
+                    <i class="bi bi-whatsapp"></i>
 
-    grid-template-columns: 1fr 0.85fr;
+                </a>
 
-    gap: 100px;
 
-    align-items: center;
-}
+                <a
+                    href="mailto:Rehabilitafundacion@gmail.com"
+                    aria-label="Correo">
 
+                    <i class="bi bi-envelope"></i>
 
-/* -----------------------------------------------------
-   ENCABEZADO
------------------------------------------------------ */
+                </a>
 
-.team-intro-heading {
-    position: relative;
-}
 
+                <a
+                    href="https://www.instagram.com/fundacionterapeuticarehabilita"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram">
 
-.team-intro-heading .eyebrow {
-    display: inline-flex;
+                    <i class="bi bi-instagram"></i>
 
-    align-items: center;
+                </a>
 
-    gap: 13px;
 
-    margin-bottom: 24px;
+                <a
+                    href="https://web.facebook.com/fundacionrehabilitaoficial"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook">
 
-    color: #c7ad78;
+                    <i class="bi bi-facebook"></i>
 
-    letter-spacing: 2.5px;
-}
+                </a>
 
+            </div>
 
-.team-intro-heading .eyebrow::before {
-    content: "";
+        </div>
 
-    width: 40px;
-    height: 1px;
+    </div>
 
-    background: #c7ad78;
-}
 
 
-.team-intro-heading h2 {
-    max-width: 650px;
+    <div class="container footer-premium-bottom">
 
-    margin: 0;
+        <span>
 
-    font-family: "Playfair Display", serif;
+            © <span id="year"></span>
+            Fundación Terapéutica Rehabilita
 
-    font-size: clamp(44px, 5vw, 68px);
+        </span>
 
-    line-height: 1.08;
 
-    font-weight: 500;
+        <span>
 
-    letter-spacing: -1.5px;
+            Pirque · Santiago
 
-    color: #ffffff;
-}
+        </span>
 
+    </div>
 
-.team-intro-heading h2 em {
-    display: block;
+</footer>
 
-    color: #c7ad78;
 
-    font-style: italic;
+</main>
 
-    font-weight: 500;
-}
 
+<!-- JavaScript -->
 
-/* -----------------------------------------------------
-   LÍNEA DECORATIVA
------------------------------------------------------ */
+<script src="assets/js/script.js"></script>
 
-.team-intro-line {
-    width: 75px;
-    height: 2px;
+</body>
 
-    margin-top: 38px;
-
-    background: #c7ad78;
-
-    position: relative;
-}
-
-
-.team-intro-line::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    top: 6px;
-
-    width: 35px;
-    height: 1px;
-
-    background: rgba(199,173,120,.35);
-}
-
-
-/* -----------------------------------------------------
-   TEXTO
------------------------------------------------------ */
-
-.team-intro-copy {
-    position: relative;
-
-    padding-left: 50px;
-}
-
-
-.team-intro-copy::before {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    top: 0;
-
-    width: 1px;
-    height: 100%;
-
-    background:
-        linear-gradient(
-            to bottom,
-            transparent,
-            rgba(199,173,120,.7),
-            transparent
-        );
-}
-
-
-.team-intro-copy p {
-    margin: 0 0 25px;
-
-    color: rgba(255,255,255,.72);
-
-    font-size: 16px;
-
-    line-height: 1.9;
-}
-
-
-.team-intro-copy p:first-child {
-    color: rgba(255,255,255,.9);
-
-    font-size: 18px;
-
-    line-height: 1.8;
-}
-
-
-/* -----------------------------------------------------
-   FIRMA
------------------------------------------------------ */
-
-.team-intro-signature {
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
-
-    margin-top: 35px;
-}
-
-
-.team-intro-signature span {
-    width: 35px;
-    height: 1px;
-
-    background: #c7ad78;
-}
-
-
-.team-intro-signature small {
-    color: rgba(255,255,255,.45);
-
-    font-size: 10px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1.5px;
-}
-
-
-/* -----------------------------------------------------
-   HOVER SUTIL
------------------------------------------------------ */
-
-.team-intro-heading,
-.team-intro-copy {
-    transition: transform .5s ease;
-}
-
-
-.team-intro-heading:hover {
-    transform: translateX(5px);
-}
-
-
-/* -----------------------------------------------------
-   TABLET
------------------------------------------------------ */
-
-@media (max-width: 900px) {
-
-    .team-intro {
-        padding: 100px 0;
-    }
-
-
-    .team-intro-grid {
-        grid-template-columns: 1fr;
-
-        gap: 55px;
-    }
-
-
-    .team-intro-copy {
-        padding-left: 35px;
-
-        max-width: 700px;
-    }
-
-}
-
-
-/* -----------------------------------------------------
-   CELULAR
------------------------------------------------------ */
-
-@media (max-width: 600px) {
-
-    .team-intro {
-        padding: 80px 0;
-    }
-
-
-    .team-intro-grid {
-        gap: 45px;
-    }
-
-
-    .team-intro-heading h2 {
-        font-size: 42px;
-
-        letter-spacing: -1px;
-    }
-
-
-    .team-intro-copy {
-        padding-left: 25px;
-    }
-
-
-    .team-intro-copy p:first-child {
-        font-size: 16px;
-    }
-
-
-    .team-intro-copy p {
-        font-size: 15px;
-
-        line-height: 1.8;
-    }
-
-}
-/* =====================================================
-   BOTÓN MÁS INFORMACIÓN — ELEGANTE
-===================================================== */
-
-.info-button {
-    position: relative;
-
-    display: inline-flex;
-    align-items: center;
-
-    gap: 16px;
-
-    width: fit-content;
-
-    margin-top: auto;
-    padding: 10px 0;
-
-    border: none;
-
-    background: transparent;
-
-    color: #9f814d;
-
-    font-family: "DM Sans", sans-serif;
-
-    font-size: 13px;
-    font-weight: 600;
-
-    letter-spacing: 1px;
-
-    text-transform: uppercase;
-
-    cursor: pointer;
-
-    transition:
-        color .3s ease,
-        transform .3s ease;
-}
-
-
-/* -----------------------------------------------------
-   LÍNEA INFERIOR
------------------------------------------------------ */
-
-.info-button::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    bottom: 2px;
-
-    width: 38px;
-    height: 1px;
-
-    background: #b89a62;
-
-    transition:
-        width .4s ease,
-        background .3s ease;
-}
-
-
-/* -----------------------------------------------------
-   CÍRCULO DE LA FLECHA
------------------------------------------------------ */
-
-.info-button i {
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 34px;
-    height: 34px;
-
-    border: 1px solid rgba(184,154,98,.6);
-
-    border-radius: 50%;
-
-    color: #b89a62;
-
-    font-size: 14px;
-
-    transition:
-        transform .4s ease,
-        background .3s ease,
-        color .3s ease,
-        border-color .3s ease;
-}
-
-
-/* -----------------------------------------------------
-   HOVER
------------------------------------------------------ */
-
-.info-button:hover {
-
-    color: #765b31;
-
-    transform: translateX(4px);
-
-}
-
-
-.info-button:hover::after {
-
-    width: 100%;
-
-    background: #b89a62;
-
-}
-
-
-.info-button:hover i {
-
-    transform: translateX(7px);
-
-    background: #b89a62;
-
-    border-color: #b89a62;
-
-    color: #ffffff;
-
-}
+</html>
